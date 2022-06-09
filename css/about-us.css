@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 
-.about-header{
+.about-us-header{
     margin-top: 83px;
     position: relative;
     width: 100%;
@@ -59,13 +59,6 @@ a{
     text-align: left;
     letter-spacing: 0.5px;
 }
-.container p{
-    padding-bottom: 40px;
-    font-size: 18px;
-    font-weight: 60;
-    text-align: justify;
-    letter-spacing: 0.5px;
-}
 
 .goals{
     text-align: center;
@@ -95,29 +88,49 @@ a{
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.aboutTanaka h1{
+.about-tanaka{
     text-align: center;
 }
 
-.aboutTanaka h2{
-    color: #EA7B14;
+.about-tanaka h1{
+    padding-bottom: 0;
+}
+
+.about-tanaka p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
     letter-spacing: 0.02em;
 }
 
-.our-story h2{
-    text-align: left;
-    font-size: 26px;
-}
-.why-story h2{
-    text-align: right;
+.about-tanaka h2{
+    color: #EA7B14;
+    letter-spacing: 0.02em;
     font-size: 26px;
 }
 
-.aboutTanaka-text p{
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 500;
-    font-size: 18;
-    text-align: justify;
+.our-story, .expect, .why-tanaka{
+    padding: 40px 0;
+}
+
+.our-story, .expect{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.why-tanaka{
+    padding-bottom: 20px;
+}
+
+.our-story h2, .why-tanaka h2{
+    text-align: left;
+}
+
+.expect h2{
+    text-align: right;
+}
+
+.why-tanaka h2{
+    margin-bottom: 40px;
 }
 
 .story-row{
@@ -131,11 +144,27 @@ a{
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
-.expect{
-    position: relative;
-    width: 1280px;
+.expect img{
+    width: 1200px;
     height: 456px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/Rectangle\ 41.png);
-    background-position: center;
-    background-size: cover; 
+    padding: 40px 0;
+}
+
+.about-tanaka a button{
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    color: #EA7B14;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 2px solid #EA7B14;
+    transition: all 300ms ease-out 0s;
+}
+
+.about-tanaka a button:hover{
+    cursor: pointer;
+    background-color: #EA7B14;
+    color: white;
 }
