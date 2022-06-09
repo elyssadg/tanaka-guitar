@@ -45,11 +45,20 @@ a{
     font-size: 60px;
 }
 
-.goals{
-    width: 80%;
-    margin: auto;
+.container{
+    margin: 80px 120px;
+}
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
     text-align: left;
-    padding-top: 100px;
+    letter-spacing: 0.5px;
+}
+
+.goals{
+    text-align: center;
     font-size: 32px;
 }
 
@@ -59,8 +68,7 @@ a{
     height: 350px;
     background-image: linear-gradient(rgba(6, 2, 0, 0.47), rgba(6, 2, 0, 0.47)), url(../assets/about-us/mission-bg.jpeg);
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover; 
 }
 
 .mission h1{
@@ -73,41 +81,39 @@ a{
     text-align: center;
     font-family: 'Lalezar', cursive;
     font-size: 70px;
+    font-weight: 400;
     letter-spacing: 5px;
-    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.25);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.aboutTanaka{
-    width: 80%;
-    margin: auto;
+.aboutTanaka h1{
     text-align: center;
-    padding-top: 100px;
-    font-size: 32px;
-
 }
 
-.aboutTanaka-text{
+.aboutTanaka h2{
     color: #EA7B14;
-    width: 80%;
-    margin: 120;
-    text-align: left;
-    padding-top: 79px;
-    font-size: 26px;
-
+    letter-spacing: 0.02em;
 }
-.row{
-    margin-top: 5%;
+
+.our-story h2{
+    text-align: left;
+    font-size: 26px;
+}
+
+.aboutTanaka-text p{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    font-size: 18;
+    text-align: justify;
+}
+
+.story-row{
+    margin: 40px 0;
     display: flex;
     justify-content: space-between;
-    
 }
 
-.about-col{
-    flex-basis: 31%;
-    margin-bottom: 5%;
-}
-
-.about-col img{
-    width: 100%;
-    box-shadow: 0 0 20px 0px #00000069;
+.story-row img{
+    width: 350px; height: 350px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
