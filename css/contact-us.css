@@ -96,7 +96,9 @@ a{
     height: 30px;
     margin-right: 20px;
 }
-
+.container{
+    margin: 80px 120px;
+}
 .expect{
     position: relative;
     width: 1280px;
