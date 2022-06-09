@@ -2,6 +2,52 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-header{
-    margin: 
+.navbar{
+    margin: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    float: left;
+}
+
+.logo img{
+    width: 100%;
+    height: 70px;
+}
+
+.nav-menu-center li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 27px;
+}
+
+.nav-menu-center li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 300ms ease 0s;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu-center li a:hover{
+    color: #EA7B14;
+}
+
+.nav-menu-right{
+    float: right;
+}
+
+.nav-menu-right img{
+    width: 35px; height: 35px;
+    padding: 0 15px;
+}
+
+.nav-menu-center .active a{
+    color: #EA7B14;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
