@@ -3,7 +3,7 @@ body{
 }
 
 .navbar{
-    margin: 5px 5%;
+    margin: 12px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,11 +12,16 @@ body{
 .logo{
     width: 10%;
     float: left;
+    padding-top: 2px;
 }
 
 .logo img{
     width: 100%;
-    height: 70px;
+    height: 60px;
+}
+
+.nav-menu-center{
+    float: center;
 }
 
 .nav-menu-center li{
@@ -28,7 +33,7 @@ body{
 .nav-menu-center li a{
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     transition: all 300ms ease 0s;
     letter-spacing: 0.5px;
