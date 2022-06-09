@@ -1,0 +1,141 @@
+*{
+    margin: 0; padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.about-header{
+    margin-top: 83px;
+    position: relative;
+    width: 100%;
+    height: 626px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/about-us/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.header-text{
+    color: white;
+    position: absolute;
+    width: 870px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-text h1{
+    font-family: 'Lalezar', cursive;
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-text p{
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container{
+    margin: 80px 120px;
+}
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+.container p{
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: 60;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.goals{
+    text-align: center;
+    font-size: 32px;
+}
+
+.mission{
+    position: relative;
+    width: 1280px;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/mission-bg.jpeg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.mission h1{
+    color: white;
+    padding-top: 15px;
+    position: absolute;
+    width: 870px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.aboutTanaka h1{
+    text-align: center;
+}
+
+.aboutTanaka h2{
+    color: #EA7B14;
+    letter-spacing: 0.02em;
+}
+
+.our-story h2{
+    text-align: left;
+    font-size: 26px;
+}
+.why-story h2{
+    text-align: right;
+    font-size: 26px;
+}
+
+.aboutTanaka-text p{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    font-size: 18;
+    text-align: justify;
+}
+
+.story-row{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story-row img{
+    width: 350px; height: 350px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.expect{
+    position: relative;
+    width: 1280px;
+    height: 456px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/Rectangle\ 41.png);
+    background-position: center;
+    background-size: cover; 
+}
