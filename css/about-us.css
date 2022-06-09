@@ -69,23 +69,22 @@ a{
     position: relative;
     width: 1200px;
     height: 350px;
-    background-image: linear-gradient(rgba(6, 2, 0, 0.47), rgba(6, 2, 0, 0.47)), url(../assets/about-us/mission-bg.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/mission-bg.jpeg);
     background-position: center;
     background-size: cover; 
 }
 
 .mission h1{
     color: white;
+    padding-top: 15px;
     position: absolute;
     width: 870px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Lalezar', cursive;
-    font-size: 70px;
-    font-weight: 400;
-    letter-spacing: 5px;
+    font-size: 64px;
+    font-weight: 700;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
