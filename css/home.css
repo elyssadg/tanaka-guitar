@@ -81,7 +81,7 @@ a{
 }
 
 /* -- Best Seller Row -- */
-.best-sellers .row-best-sellers{
+.row-best-sellers{
     display: flex;
     justify-content: space-between;
 }
@@ -131,4 +131,48 @@ a{
 
 .discount p:nth-child(2){
     font-size: 8px;
+}
+
+/* -- Brands Section -- */
+/* -- Brands Row -- */
+.row-brands{
+    display: flex;
+    justify-content: space-between;
+}
+
+.brands .row-brands:nth-child(3){
+    margin-top: 40px;
+}
+
+/* -- Brands Circle -- */
+.col-brands{
+    padding: 53px 18px;
+    width: 184px;
+    height: 111px;
+    background: rgb(255, 225, 119);
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.col-brands img{
+    width: 100%;
+}
+
+.col-brands a{
+    opacity: 0;
+    text-decoration: none;
+    color: rgb(121, 46, 0);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: all 300ms ease-out 0s;
+}
+
+.col-brands:hover img{
+    width: 98%;
+}
+
+.col-brands:hover a{
+    opacity: 1;
 }
