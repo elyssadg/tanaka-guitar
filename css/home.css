@@ -17,6 +17,7 @@ a{
 
 /* -- Home Header -- */
 .home-header{
+    margin-top: 83px;
     position: relative;
     width: 100%;
     height: 626px;
