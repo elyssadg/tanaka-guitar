@@ -87,14 +87,14 @@ a{
 }
 
 .social-row{
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
 }
 
-.social-row img{
-    width: 70px; 
-    height: 70px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+.social-row a img{
+    width: 50px; 
+    height: 50px;
+    margin-right: 20px;
 }
 
 .expect{
@@ -127,39 +127,39 @@ a{
 }
 
 .contact-col input, .contact-col textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    }
-    .icons img{
-        width: 2%;
-    }
-    .contact-col img{
-        width: 4%;
-    }
-    .contact-us{
-        width: 80%;
-        margin: auto;
-    }
-    .contact-col{
-        flex-basis: 48%;
-        margin-bottom: 30px;
-    }
-    .contact-col div p{
-        padding: 0;
-    }
-    .contact-col div h5{
-        font-size: 20px;
-        margin-bottom: 5px;
-        color: #EA7B14;
-        font-weight: 400;
-    }
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+.icons img{
+    width: 2%;
+}
+.contact-col img{
+    width: 4%;
+}
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div p{
+    padding: 0;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #EA7B14;
+    font-weight: 400;
+}
 
-    .row{
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-    }
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
