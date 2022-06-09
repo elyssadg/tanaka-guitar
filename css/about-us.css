@@ -59,6 +59,13 @@ a{
     text-align: left;
     letter-spacing: 0.5px;
 }
+.container p{
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: 60;
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
 
 .goals{
     text-align: center;
@@ -101,6 +108,10 @@ a{
     text-align: left;
     font-size: 26px;
 }
+.why-story h2{
+    text-align: right;
+    font-size: 26px;
+}
 
 .aboutTanaka-text p{
     color: rgba(0, 0, 0, 0.8);
@@ -118,4 +129,13 @@ a{
 .story-row img{
     width: 350px; height: 350px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.expect{
+    position: relative;
+    width: 1280px;
+    height: 456px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/Rectangle\ 41.png);
+    background-position: center;
+    background-size: cover; 
 }
