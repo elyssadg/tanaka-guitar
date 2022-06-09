@@ -139,6 +139,11 @@ a{
     font-size: 8px;
 }
 
+.col-best-sellers img{
+    height: 62.5%;
+    width: 60%;
+}
+
 /* -- Button See All Collections -- */
 .best-sellers a button{
     margin-top: 60px;
