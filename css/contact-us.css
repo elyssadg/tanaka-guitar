@@ -163,3 +163,7 @@ box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
+
+::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
