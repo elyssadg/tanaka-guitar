@@ -12,8 +12,10 @@ body{
 
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
+/* -- Home Header -- */
 .home-header{
     position: relative;
     width: 100%;
@@ -35,17 +37,19 @@ a{
 
 .header-text h1{
     font-family: 'Lalezar', cursive;
+    font-weight: 400;
     font-size: 70px;
     letter-spacing: 5px;
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-text p{
+    margin-top: 10px;
     font-size: 22px;
 }
 
 .header-text a button{
-    margin-top: 100px;
+    margin-top: 75px;
     width: 227px;
     height: 54px;
     background-color: transparent;
@@ -55,11 +59,75 @@ a{
     font-size: 25px;
     border-radius: 30px;
     border: 3px solid #EA7B14;
-    transition: all 300ms ease 0s;
+    transition: all 300ms ease-out 0s;
 }
 
 .header-text a button:hover{
     cursor: pointer;
     background-color: #EA7B14;
     color: white;
+}
+
+.container{
+    margin: 80px 120px;
+}
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* -- Best Seller Row -- */
+.best-sellers .row-best-sellers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-sellers .row-best-sellers:nth-child(3){
+    margin-top: 60px;
+}
+
+/* -- Best Seller Catalogue -- */
+.col-best-sellers{
+    position: relative;
+    width: 250px;
+    height: 400px;
+    background: rgba(253, 249, 243, 1);
+    border: 1px solid rgba(121, 46, 0, 0.8);
+    border-radius: 10px;
+    transition: all 200ms ease-out;
+}
+
+.col-best-sellers:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* -- Discount Circle -- */
+.discount{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 1);
+    color: white;
+    text-align: center;
+}
+
+.discount .percentage{
+    padding: 8px;
+}
+
+.discount p{
+    font-weight: 600;
+}
+
+.discount p:nth-child(1){
+    font-size: 12px;
+}
+
+.discount p:nth-child(2){
+    font-size: 8px;
 }
