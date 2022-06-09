@@ -77,7 +77,13 @@ a{
     padding-bottom: 40px;
     font-size: 32px;
     font-weight: 700;
+    text-align: left;
     letter-spacing: 0.5px;
+}
+
+/* -- Best Sellers Section -- */
+.best-sellers{
+    text-align: center;
 }
 
 /* -- Best Seller Row -- */
@@ -131,6 +137,27 @@ a{
 
 .discount p:nth-child(2){
     font-size: 8px;
+}
+
+/* -- Button See All Collections -- */
+.best-sellers a button{
+    margin-top: 60px;
+    width: 172px;
+    height: 37px;
+    background-color: transparent;
+    color: #EA7B14;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 2px solid #EA7B14;
+    transition: all 300ms ease-out 0s;
+}
+
+.best-sellers a button:hover{
+    cursor: pointer;
+    background-color: #EA7B14;
+    color: white;
 }
 
 /* -- Brands Section -- */
