@@ -12,7 +12,7 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="../css/navigation-bar.css">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/gallery.css">
     <link rel="stylesheet" href="../css/footer.css">
 
     <!-- JS -->
@@ -25,9 +25,8 @@
                 <a href="#" class="logo"><img src="../assets/navigation-bar/logo.png" alt="tanaka guitar logo"></a>
                 <nav>
                     <ul class="nav-menu-center">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#categories">Categories</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="home.html">Home</a></li>
+                        <li class="active"><a href="#">Gallery</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
@@ -40,17 +39,434 @@
             </div>
         </div>
         <div class="gallery-header">
-            
+            <div class="slide">
+                <img src="../assets/gallery/header-slider/slide-1.png" alt="slide 1">
+            </div>
+            <div class="slide">
+                <img src="../assets/home/whats-on-slider/slide-3.png" alt="slide 2">
+            </div>
+            <div class="slide">
+                <img src="../assets/gallery/header-slider/slide-3.png" alt="slide 3">
+            </div>
+            <div class="slide">
+                <img src="../assets/home/whats-on-slider/slide-2.png" alt="slide 4">
+            </div>
+            <div class="slide">
+                <img src="../assets/home/whats-on-slider/slide-1.png" alt="slide 5">
+            </div>
+            <a class="prev-btn" onclick="moveSlides(-1)"><img src="../assets/home/whats-on-slider/prev-btn.png" alt="prev"></a>
+            <a class="next-btn" onclick="moveSlides(1)"><img src="../assets/home/whats-on-slider/next-btn.png" alt="next"></a>
         </div>
     </header>
 
-    <section class="category-bar">
-
+    <section class="container category-bar">
+        <h1>Categories</h1>
+        <a href="#classic-guitar" class="category">Classic</a>
+        <a href="#electric-guitar" class="category">Electric</a>
+        <a href="#bass-guitar" class="category">Bass</a>
+        <a href="#acoustic-guitar" class="category">Acoustic</a>
+        <a href="#silent-guitar" class="category">Silent</a>
+        <a href="#amplifier" class="category">Amplifier</a>
     </section>
 
-    <section class="container classic-guitar">
+    <section class="container" id="classic-guitar">
         <h1>Classic Guitar</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/classic-guitar/guitar-1.png" alt="guitar 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Alvarez Artist Series AC65CE</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(174, 105, 1)"></div>
+                        <div class="color-circle" style="background: rgb(245, 192, 113)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp4.453.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <div class="discount">
+                    <p>20%</p>
+                    <p>off</p>
+                </div>
+                <img src="../assets/gallery/classic-guitar/guitar-2.png" alt="guitar 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Fender ESC80 3/4 Classical</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(255, 182, 0)"></div>
+                    </div>
+                    <p class="stock">In Stock</p>
+                    <p class="price-before-disc">Rp1.000.000,00</p>
+                    <p class="price">Rp800.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/classic-guitar/guitar-3.png" alt="guitar 3">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Valencia 1/2 Size Classical</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(224, 141, 3)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp1.200.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/classic-guitar/guitar-4.png" alt="guitar 4">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Yamaha C40 Classical</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(225, 127, 4)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp2.000.000,00</p>
+                </div>
+            </div> 
+        </div>
     </section>
+
+    <section class="container" id="electric-guitar">
+        <h1>Electric Guitar</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/electric-guitar/guitar-1.png" alt="guitar 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Gibson Les Paul Standard 50s</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(174, 105, 1)"></div>
+                        <div class="color-circle" style="background: rgb(222, 134, 1)"></div>
+                        <div class="color-circle" style="background: rgb(245, 192, 113)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp4.453.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/electric-guitar/guitar-2.png" alt="guitar 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">PRS SE Hollowbody II</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(196, 59, 0)"></div>
+                        <div class="color-circle" style="background: rgb(234, 123, 20)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp3.350.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/electric-guitar/guitar-3.png" alt="guitar 3">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">EVH Striped Series Frankie</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(255, 0, 0)"></div>
+                        <div class="color-circle" style="background: white"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp4.420.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/electric-guitar/guitar-4.png" alt="guitar 4">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Charvel Made in Japan DK24</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(111, 59, 4)"></div>
+                        <div class="color-circle" style="background: rgb(245, 192, 113)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp3.320.000,00</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="container" id="bass-guitar">
+        <h1>Bass Guitar</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/bass-guitar/guitar-1.png" alt="guitar 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Fender Player Plus Active</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(255, 0, 0)"></div>
+                        <div class="color-circle" style="background: rgb(38, 148, 183)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp4.500.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/bass-guitar/guitar-2.png" alt="guitar 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Squier 40th Anniversary Bass</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: white"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp20.340.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/bass-guitar/guitar-3.png" alt="guitar 3">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Spector Euro 5LT Red Fade</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(0, 59, 210)"></div>
+                        <div class="color-circle" style="background: rgb(255, 0, 0)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp6.600.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/bass-guitar/guitar-4.png" alt="guitar 4">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Ibanez GSR180 Gio Baltic</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(91, 123, 148)"></div>
+                        <div class="color-circle" style="background: white"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp7.253.000,00</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="container" id="acoustic-guitar">
+        <h1>Acoustic Guitar</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <div class="best-seller-icon"><img src="../assets/gallery/best-seller.png" alt="best seller"></div>
+                <img src="../assets/gallery/acoustic-guitar/guitar-1.png" alt="guitar 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Sigma Special Edition</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(121, 46, 0)"></div>
+                        <div class="color-circle" style="background: rgb(234, 123, 20)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp2.530.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <div class="best-seller-icon"><img src="../assets/gallery/best-seller.png" alt="best seller"></div>
+                <img src="../assets/gallery/acoustic-guitar/guitar-2.png" alt="guitar 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Fender CD-60S</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: white"></div>
+                    </div>
+                    <p class="stock-no-disc">Limited Stock</p>
+                    <p class="price-no-disc">Rp4.410.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/acoustic-guitar/guitar-3.png" alt="guitar 3">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Alvarez Artist Series AF30CE</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(245, 192, 113)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp2.500.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/acoustic-guitar/guitar-4.png" alt="guitar 4">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Gretsch G9500 Jim Dandy 2</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: rgb(94, 32, 35)"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp3.500.000,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="silent-guitar">
+        <h1>Silent Guitar</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <div class="best-seller-icon"><img src="../assets/gallery/best-seller.png" alt="best seller"></div>
+                <img src="../assets/gallery/silent-guitar/guitar-1.png" alt="guitar 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Silent Guitar Nylon Natural</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: rgb(111, 59, 4)"></div>
+                        <div class="color-circle" style="background: rgb(245, 192, 113)"></div>
+                    </div>
+                    <p class="stock">In Stock</p>
+                    <p class="price-before-disc">Rp8.000.000,00</p>
+                    <p class="price">Rp5.600.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/silent-guitar/guitar-2.png" alt="guitar 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Silent Guitar Steel Natural</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp9.150.000,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="amplifier">
+        <h1>Amplifier and Accessories</h1>
+        <div class="row-guitar-gallery">
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <div class="best-seller-icon"><img src="../assets/gallery/best-seller.png" alt="best seller"></div>
+                <img src="../assets/gallery/amplifier/ampli-1.png" alt="ampli 1">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Blackstar ID Core 10 Black V3</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp2.500.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                    <p>+</p>
+                </div>
+                <img src="../assets/gallery/amplifier/ampli-2.png" alt="ampli 2">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Diezel VH Micro 30W</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                        <div class="color-circle" style="background: white"></div>
+                    </div>
+                    <p class="stock-no-disc">Limited Stock</p>
+                    <p class="price-no-disc">Rp500.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/amplifier/ampli-3.png" alt="ampli 3">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">Friedman Brown Eye BE Mini</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp860.000,00</p>
+                </div>
+            </div>
+            <div class="col-guitar-gallery">
+                <div class="add-to-cart">
+                        <p>+</p>
+                </div>
+                <img src="../assets/gallery/amplifier/ampli-4.png" alt="ampli 4">
+                <div class="guitar-gallery-text">
+                    <p class="guitar-name">BOSS Katana Mini</p>
+                    <div class="colors">
+                        Colors: 
+                        <div class="color-circle" style="background: black"></div>
+                    </div>
+                    <p class="stock-no-disc">In Stock</p>
+                    <p class="price-no-disc">Rp3.400.000,00</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    
 
     <footer>
         <div class="subscribe">

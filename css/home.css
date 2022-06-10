@@ -92,13 +92,13 @@ a{
 .row-best-sellers{
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
     justify-content: space-between;
 }
 
-@media(max-width: 1000px){
+@media(max-width: 800px){
     .row-best-sellers{
         grid-template-columns: auto auto;
+        justify-content: space-evenly;
     }
 }
 
