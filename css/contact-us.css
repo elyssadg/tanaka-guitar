@@ -143,13 +143,25 @@ a{
     justify-content: space-between;
 }
 
+.contact-col input{
+    height: 50px;
+}
+
+.contact-col textarea{
+    height: 195px;
+}
+
+
 .contact-col input, .contact-col textarea{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
     border-radius: 20px;
     border: 0.5px solid #792E00;
     color: black;
+    padding-left: 40px;
+    width: 700px;
 }
 
 ::placeholder{
-    font-family: 'Montserrat', sans-serif;
     color: rgba(0, 0, 0, 0.4);
 }
