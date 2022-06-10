@@ -14,7 +14,7 @@ a{
     text-decoration: none;
 }
 
-.about-header{
+.contact-us-header{
     margin-top: 83px;
     position: relative;
     width: 100%;
@@ -48,6 +48,18 @@ a{
     letter-spacing: 2px;
 }
 
+.container{
+    margin: 80px 120px;
+}
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
 .map{
     width: 100%;
     margin: auto;
@@ -66,18 +78,6 @@ a{
     width: 50px; 
     height: 50px;
     margin-right: 20px;
-}
-
-.container{
-    margin: 80px 120px;
-}
-
-.container h1{
-    padding-bottom: 40px;
-    font-size: 32px;
-    font-weight: 700;
-    text-align: left;
-    letter-spacing: 0.5px;
 }
 
 .click a button{
@@ -100,19 +100,18 @@ a{
     color: white;
 }
 
-.contact-col input, .contact-col textarea{
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 17px;
-    outline: none;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
 .contact-col img{
     width: 35px;
     height: 35px;
 }
+
+.contact-col h5{
+    font-size: 24px;
+    margin: 5px 0;
+    color: #EA7B14;
+    font-weight: 700;
+}
+
 
 .contact-col{
     flex-basis: 48%;
@@ -125,17 +124,22 @@ a{
     margin-bottom: 35px;
 }
 
-.contact-col h5{
-    font-size: 24px;
-    margin: 5px 0;
-    color: #EA7B14;
-    font-weight: 700;
-}
-
 .row{
-    margin-top: 5%;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+.contact-col input, .contact-col textarea{
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 0.5px solid #792E00;
+    color: black;
+    padding-left: 40px;
+    width: 700px;
+    margin-bottom: 20px;
 }
 
 .contact-col input{
@@ -147,16 +151,6 @@ a{
     padding-top: 20px;
 }
 
-
-.contact-col input, .contact-col textarea{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    border-radius: 20px;
-    border: 0.5px solid #792E00;
-    color: black;
-    padding-left: 40px;
-    width: 700px;
-}
 
 ::placeholder{
     color: rgba(0, 0, 0, 0.4);
