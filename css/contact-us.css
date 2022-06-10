@@ -27,7 +27,7 @@ a{
 .header-text{
     color: white;
     position: absolute;
-    width: 870px;
+    width: 1100px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,7 +38,6 @@ a{
     font-family: 'Lalezar', cursive;
     font-size: 100px;
     font-weight: 400;
-    letter-spacing: 8px;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -48,42 +47,13 @@ a{
     letter-spacing: 2px;
 }
 
-.goals{
-    text-align: center;
-    font-size: 32px;
-}
-
 .map{
     width: 100%;
     margin: auto;
 }
+
 .map iframe{
     width: 100%;
-}
-
-.aboutTanaka h1{
-    text-align: center;
-}
-
-.aboutTanaka h2{
-    color: #EA7B14;
-    letter-spacing: 0.02em;
-}
-
-.our-story h2{
-    text-align: left;
-    font-size: 26px;
-}
-.why-story h2{
-    text-align: right;
-    font-size: 26px;
-}
-
-.aboutTanaka-text p{
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 500;
-    font-size: 18;
-    text-align: justify;
 }
 
 .social-row{
@@ -92,20 +62,21 @@ a{
 }
 
 .social-row a img{
-    width: 30px; 
-    height: 30px;
+    width: 50px; 
+    height: 50px;
     margin-right: 20px;
 }
+
 .container{
     margin: 80px 120px;
 }
-.expect{
-    position: relative;
-    width: 1280px;
-    height: 456px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/Rectangle\ 41.png);
-    background-position: center;
-    background-size: cover; 
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
 }
 
 .click a button{
@@ -118,7 +89,7 @@ a{
     font-weight: 700;
     font-size: 15px;
     border-radius: 30px;
-    border: 3px solid #EA7B14;
+    border: 2px solid #EA7B14;
     transition: all 300ms ease-out 0s;
 }
 
@@ -129,30 +100,36 @@ a{
 }
 
 .contact-col input, .contact-col textarea{
-width: 100%;
-padding: 15px;
-margin-bottom: 17px;
-outline: none;
-border: 1px solid #ccc;
-box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
+
 .icons img{
     width: 2%;
 }
+
 .contact-col img{
     width: 10%;
 }
+
 .contact-us{
     width: 80%;
     margin: auto;
 }
+
 .contact-col{
     flex-basis: 48%;
     margin-bottom: 30px;
 }
+
 .contact-col div p{
     padding: 0;
 }
+
 .contact-col div h5{
     font-size: 20px;
     margin-bottom: 5px;
@@ -166,10 +143,13 @@ box-sizing: border-box;
     justify-content: space-between;
 }
 
-.contact-col input,textarea{
+.contact-col input, .contact-col textarea{
     border-radius: 20px;
-    border-color: #792E00;
+    border: 0.5px solid #792E00;
+    color: black;
 }
+
 ::placeholder{
     font-family: 'Montserrat', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
 }
