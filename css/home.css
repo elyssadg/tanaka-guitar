@@ -90,11 +90,17 @@ a{
 
 /* -- Best Seller Row -- */
 .row-best-sellers{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: space-evenly;
 
+}
+@media(max-width: 1000px){
+    .row-best-sellers{
+        grid-template-columns: auto auto;
+    }
+}
 .best-sellers .row-best-sellers:nth-child(3){
     margin-top: 60px;
 }
@@ -102,7 +108,7 @@ a{
 /* -- Best Seller Catalogue -- */
 .col-best-sellers{
     position: relative;
-    width: 21%;
+    width: 250px;
     height: 400px;
     background: rgba(253, 249, 243, 1);
     border: 1px solid rgba(121, 46, 0, 0.8);
