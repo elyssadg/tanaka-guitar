@@ -235,27 +235,64 @@ a{
 
 .slide{
     display: none;
-    transition: all 500ms ease-out 0s;
+    transition: 300ms ease-out 0s;
+}
+
+.slide img{
+    border: 0.5px solid rgb(121, 46, 0);
+    border-radius: 20px;
+}
+
+.fade{
+    animation-name: fade;
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+}
+
+@keyframes fade {
+    from{opacity: 0;}
+    from{opacity: 1;}
+}
+.indicator{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.indicator-circle{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    background: rgba(217, 217, 217, 0.5);
+    margin: 0 20px;
+}
+
+.indicator .active{
+    background: rgb(121, 46, 0);
 }
 
 .prev-btn, .next-btn{
     cursor: pointer;
     position: absolute;
     top: 50%;
-    user-select: none;
 }
 
 .prev-btn{
-    left: 75px;
+    left: 35px;
+}
+
+.prev-btn img{
+    transform: rotate(180);
 }
 
 .next-btn{
-    right: 75px;
+    right: 35px;
 }
 
 .prev-btn img, .next-btn img{
     width: 40px; height: 40px;
     background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
     transition: all 300ms ease-out 0s;
 }
 
