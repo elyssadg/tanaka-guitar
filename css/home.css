@@ -93,14 +93,15 @@ a{
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
 }
+
 @media(max-width: 1000px){
     .row-best-sellers{
         grid-template-columns: auto auto;
     }
 }
+
 .best-sellers .row-best-sellers:nth-child(3){
     margin-top: 60px;
 }
