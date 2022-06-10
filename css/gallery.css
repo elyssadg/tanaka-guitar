@@ -1,0 +1,29 @@
+*{
+    margin: 0; padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    margin: 80px 120px;
+    max-width: 1200px;
+}
+
+.container h1{
+    padding-bottom: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 0.5px;
+}

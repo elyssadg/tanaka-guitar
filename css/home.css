@@ -90,6 +90,7 @@ a{
 
 /* -- Best Seller Row -- */
 .row-best-sellers{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -303,7 +304,7 @@ a{
 }
 
 /* -- Categories Section -- */
-.categories h1{
+#categories h1{
     text-align: right;
 }
 
@@ -313,7 +314,7 @@ a{
     justify-content: space-between;
 }
 
-.categories .row-categories:nth-child(3){
+#categories .row-categories:nth-child(3){
     margin-top: 35px;
 }
 
