@@ -29,7 +29,8 @@ a{
 .header-text{
     color: white;
     position: absolute;
-    width: 870px;
+    width: 60.5%;
+    height: 413px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -71,6 +72,7 @@ a{
 
 .container{
     margin: 80px 120px;
+    max-width: 1200px;
 }
 
 .container h1{
@@ -99,7 +101,7 @@ a{
 /* -- Best Seller Catalogue -- */
 .col-best-sellers{
     position: relative;
-    width: 250px;
+    width: 21%;
     height: 400px;
     background: rgba(253, 249, 243, 1);
     border: 1px solid rgba(121, 46, 0, 0.8);
