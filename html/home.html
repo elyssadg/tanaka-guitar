@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../css/navigation-bar.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- JS -->
+    <script defer src="../script/slider.js"></script>
 </head>
 <body>
     <header>
@@ -192,7 +195,7 @@
 
     <section class="container slider-whats-on">
         <h1>What's On</h1>
-        <div class="slide">
+        <div class="slide slider-transition">
             <img src="../assets/home/whats-on-slider/slide-1.png" alt="slide 1">
             <div class="indicator">
                 <div class="indicator-circle active"></div>
@@ -200,7 +203,7 @@
                 <div class="indicator-circle"></div>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide slider-transition">
             <img src="../assets/home/whats-on-slider/slide-2.png" alt="slide 2">
             <div class="indicator">
                 <div class="indicator-circle"></div>
@@ -208,7 +211,7 @@
                 <div class="indicator-circle"></div>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide slider-transition">
             <img src="../assets/home/whats-on-slider/slide-3.png" alt="slide 3">
             <div class="indicator">
                 <div class="indicator-circle"></div>
@@ -216,27 +219,8 @@
                 <div class="indicator-circle active"></div>
             </div>
         </div>
-        <a class="prev-btn" onclick="moveSlides(-1)"><img src="../assets/home/whats-on-slider/right-black.png" alt="prev"></a>
-        <a class="next-btn" onclick="moveSlides(1)"><img src="../assets/home/whats-on-slider/right-black.png" alt="next"></a>
-        <script>
-            let currentSlide = 1;
-            showSlides(currentSlide);
-        
-            function moveSlides(n) {
-                showSlides(currentSlide += n);
-            }
-        
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {currentSlide = 1}
-                if (n < 1) {currentSlide = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[currentSlide-1].style.display = "block";
-            }
-        </script>
+        <a class="prev-btn" onclick="moveSlides(-1)"><img src="../assets/home/whats-on-slider/prev-btn.png" alt="prev"></a>
+        <a class="next-btn" onclick="moveSlides(1)"><img src="../assets/home/whats-on-slider/next-btn.png" alt="next"></a>
     </section>
 
     <section class="container categories">
