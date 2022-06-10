@@ -28,6 +28,7 @@ a{
     color: white;
     position: absolute;
     width: 1100px;
+    height: 160px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -57,7 +58,7 @@ a{
 }
 
 .social-row{
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
 }
 
@@ -108,33 +109,27 @@ a{
     box-sizing: border-box;
 }
 
-.icons img{
-    width: 2%;
-}
-
 .contact-col img{
-    width: 10%;
-}
-
-.contact-us{
-    width: 80%;
-    margin: auto;
+    width: 35px;
+    height: 35px;
 }
 
 .contact-col{
     flex-basis: 48%;
-    margin-bottom: 30px;
 }
 
-.contact-col div p{
-    padding: 0;
+.contact-col p{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(127, 127, 127, 1);
+    margin-bottom: 35px;
 }
 
-.contact-col div h5{
-    font-size: 20px;
-    margin-bottom: 5px;
+.contact-col h5{
+    font-size: 24px;
+    margin: 5px 0;
     color: #EA7B14;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .row{
@@ -149,6 +144,7 @@ a{
 
 .contact-col textarea{
     height: 195px;
+    padding-top: 20px;
 }
 
 
