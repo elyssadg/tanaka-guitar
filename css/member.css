@@ -55,3 +55,44 @@ a{
 ::placeholder{
     font-family: 'Montserrat', sans-serif;
 }
+
+.leftpic{grid-area: leftpic;}
+.first{grid-area: first;}
+.last{grid-area: last;}
+.email{grid-area: email;}
+.phone{grid-area: phone;}
+.gender{grid-area: gender;}
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.join-container{
+    display: grid;
+    grid-template-areas: 'leftpic first last'
+    'leftpic email email'
+    'leftpic phone phone'
+    'leftpic gender gender';
+    gap: 5px;
+    padding: 100px;
+}
+.join-container img{
+    width: 300px;
+}
+.join-container input{
+    border-radius: 10px;
+    border-color: #EA7B14;
+}
+.benefit-container{
+    display: grid;
+    grid-template-areas: 'item1 item2 item3';
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+.benefit-container img{
+    width: 400px;
+}
+.benefit-container p{
+    text-align: justify;
+    width: 400px;
+}
