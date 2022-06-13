@@ -123,14 +123,17 @@
     
                 </div>
                 <div class="contact-col">
-                    <form action="">
-                        <input type="text" placeholder="Enter your name (min. 2 characters)" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)" pattern="[0][8][0-9]{10}" required>
-                        <input type="email" placeholder="Enter your email address (format: address@gmail.com)" required>
-                        <input type="text" placeholder="Enter your subject" required>
-                        <textarea rows="8" placeholder="Message..." required></textarea>
+                    <form method="POST">
+                        <input type="text" id="username" placeholder="Enter your name (min. 2 characters)">
+                        <div id="errorUser" class="color-red"></div>
+                        <input type="text" id="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
+                        <div id="errorPhone" class="color-red"></div>
+                        <input type="email" id="email" placeholder="Enter your email address (format: address@gmail.com)">
+                        <div id="errorEmail" class="color-red"></div>
+                        <input type="text" id="subject" placeholder="Enter your subject">
+                        <textarea rows="8" id="message" placeholder="Message..."></textarea>
                         <div class="click">
-                            <a href=""><button>Send Message</button></a>
+                        <button type="button" class="send-button" onclick="validateForm()">Send Message</button>
                         </div>
                         
                     </form>
@@ -142,4 +145,5 @@
     
 
 </body>
+<script src="../script/contact.js"></script>
 </html>
