@@ -163,10 +163,9 @@ a{
 .pontianak{grid-area: pontianak;}
 .store{
     position: relative;
-    height: 270px;
+    height: 280px;
     display: grid;
     grid-template-areas: 'jakarta yogyakarta surabaya''jakarta denpasar pontianak ';
-    align-content: center;
     margin-top: 20px;
     gap: 10px;
 }
@@ -176,6 +175,7 @@ a{
     width: 400px;
 }
 .layer{
+    justify-self: center;
     height: 278px;
     width: 400px;
     background: transparent;
