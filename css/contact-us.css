@@ -168,30 +168,30 @@ a{
     gap: 10px;
     padding: 20px;
 }
-.desc img{
-    width: 600px;
+.store img{
+    width: 400px;
 }
 .layer{
     background: transparent;
     position: absolute;
     border-radius: 15px;
-    top: 1640px;
+    top: 1342px;
     text-align: center;
     color: rgb(255, 255, 255);
-    padding-top: 106px;
-    padding-bottom: 106px;
-    width: 600px;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    width: 400px;
     
     transition: 0.5s;
 }
 .layer h3{
     transform: translateY(100%);
-    font-size: 50px;
+    font-size: 40px;
     transition: 0.5s;
 }
 .layer p{
     opacity: 0;
-    font-size: 18px;
+    font-size: 15px;
     transition: 0.5s;
 }
 .layer:hover{
