@@ -80,9 +80,10 @@ a{
     height: 50px;
     margin-right: 20px;
 }
-
-.social-row a img:hover{
-    transform: scale(1.03);
+@media (min-width:801px){
+    .social-row a img:hover{
+        transform: scale(1.03);
+    }
 }
 
 .click button{
@@ -120,6 +121,7 @@ a{
 
 .contact-col{
     flex-basis: 48%;
+    padding-bottom: 10px;
 }
 
 .contact-col p{
@@ -284,4 +286,52 @@ a{
 
 .store-box:hover p, .store-box:hover a, .store-box:hover .phone{
     opacity: 1;
+}
+
+@media(max-width: 800px){
+    .story-row img{
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+    }
+    .container{
+        margin: 80px 10px;
+    }
+    .header-text h1{
+        font-family: 'Lalezar', cursive;
+        font-size: 80px;
+    }
+    
+    .header-text p{
+        font-size:40px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .contact-col{
+        transform: translateX();
+    }
+    .contact-col h5, .contact-col p{
+       transform: translateX(70px);
+    }
+    .contact-col img{
+        position: absolute;
+        transform: translateY(10px);
+        width: 45px;
+        height: 45px;
+    }
+    .social-row img{
+        position: relative;
+        transform: translateX(70px);
+        justify-content: space-evenly;
+    }
+    .store{
+        position: relative;
+        display: grid;
+        grid-template-areas: 'jakarta''yogyakarta''surabaya' 'denpasar' 'pontianak';
+        justify-content: center;
+    }
+    .store-box{
+        margin-bottom: 10px;
+    }
 }
