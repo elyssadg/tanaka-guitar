@@ -39,13 +39,14 @@ a{
     font-family: 'Lalezar', cursive;
     font-size: 100px;
     font-weight: 400;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.02em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-text p{
     font-size: 60px;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 0.02em;
 }
 
 .container{
@@ -161,61 +162,122 @@ a{
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
 }
+
+.store-box{
+    position: relative;
+}
+
 .jakarta{grid-area: jakarta;}
 .yogyakarta{grid-area: yogyakarta;}
 .surabaya{grid-area: surabaya;}
 .denpasar{grid-area: denpasar;}
 .pontianak{grid-area: pontianak;}
+
 .store{
     position: relative;
-    height: 280px;
     display: grid;
     grid-template-areas: 'jakarta yogyakarta surabaya''jakarta denpasar pontianak ';
-    margin-top: 20px;
-    gap: 10px;
+    justify-content: center;
+    margin-top: 60px;
+    grid-column-gap: 60px;
 }
+
 .store img{
     position: absolute;
     top: 0;
-    width: 400px;
+    width: 360px;
+    height: 250px;
 }
+
 .layer{
-    justify-self: center;
-    height: 278px;
-    width: 400px;
-    background: transparent;
-    position: absolute;
-    border-radius: 15px;
-    top: 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 360px;
+    height: 250px;
+    background: transparent;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
-    width: 400px;
-    
-    transition: 0.5s;
+    transition: all 0.5s ease-out;
 }
+
 .layer h3{
-    transform: translateY(200%);
-    font-size: 40px;
-    transition: 0.5s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 360px;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: all 0.5s ease-out;
 }
+
 .layer p{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
     opacity: 0;
-    font-size: 13px;
-    transition: 0.5s;
 }
-.layer:hover{
-    background: rgba(0, 0, 0, 0.25);
-}
-.layer:hover h3{
-    transform: translateY(150%);
-    color: white;
-    opacity: 1;
 
+.layer p:nth-child(2):not(.phone p){
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    top: 75px;
 }
-.layer:hover p{
-    transform: translateY(90%);
 
+.layer .phone{
+    position: absolute;
+    align-items: center;
+    top: 168px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 18px;
+    display: flex;
+    opacity: 0;
+}
+
+.layer .phone img{
+    width: 11%; height: 100%;
+}
+
+.layer .phone p{
+    margin-left: 15%;
+}
+
+.layer a{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0;
+}
+
+.store-box:hover .layer{
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.store-box:hover h3{
+    top: 15%;
+    font-size: 25px;
+}
+
+.store-box:hover a{
+    bottom: 10%;
+}
+
+.layer a:hover{
+    border-bottom: 1px solid white;
+}
+
+.store-box:hover p, .store-box:hover a, .store-box:hover .phone{
     opacity: 1;
-    
 }
