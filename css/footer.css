@@ -19,6 +19,7 @@
 
 .subscribe-form{
     margin: 50px 120px;
+    z-index: 2;
 }
 
 .subscribe-form h2{
@@ -29,7 +30,7 @@
     margin-bottom: 40px;
 }
 
-.subscribe-form input{
+/* .subscribe-form input{
     outline: none;
     width: 700px;
     height: 50px;
@@ -39,7 +40,7 @@
     border-radius: 20px;
     border: 0.5px solid #792E00;
     padding-left: 40px;
-}
+} */
 
 #name{
     margin-bottom: 20px;

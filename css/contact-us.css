@@ -81,6 +81,10 @@ a{
     margin-right: 20px;
 }
 
+.social-row a img:hover{
+    transform: scale(1.03);
+}
+
 .click button{
     margin-top: 10px;
     width: 150px;

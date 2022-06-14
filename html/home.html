@@ -226,44 +226,56 @@
     <section class="container" id="categories">
         <h1>Categories</h1>
         <div class="row-categories">
-            <div class="col-categories">
-                <h2>Classic Guitar</h2>
-                <img src="../assets/home/categories/classic-guitar.png" alt="classic guitar">
-                <div class="categories-rectangle"></div>
-                <p>The classical guitar (also known as the nylon-string guitar or Spanish guitar) is a member of the guitar family used in classical music and other styles.</p>
-            </div>
-            <div class="col-categories">
-                <h2>Electric Guitar</h2>
-                <img src="../assets/home/categories/electric-guitar.png" alt="electric guitar">
-                <div class="categories-rectangle"></div>
-                <p>An electric guitar is a guitar that produces sound by vibrating strings over a pickup that converts the vibrations into electrical signals.</p>
-            </div>
-            <div class="col-categories">
-                <h2>Bass Guitar</h2>
-                <img src="../assets/home/categories/bass-guitar.png" alt="bass guitar">
-                <div class="categories-rectangle"></div>
-                <p>A bass guitar is the lowest-pitch member of the guitar family. It produces sound when its metal bass strings vibrate over one or more magnetic pickups.</p>
-            </div>
+            <a href="gallery.html#classic-guitar">   
+                <div class="col-categories">
+                    <h2>Classic Guitar</h2>
+                    <img src="../assets/home/categories/classic-guitar.png" alt="classic guitar">
+                    <div class="categories-rectangle"></div>
+                    <p>The classical guitar (also known as the nylon-string guitar or Spanish guitar) is a member of the guitar family used in classical music and other styles.</p>
+                </div>
+            </a>
+            <a href="gallery.html#electric-guitar">
+                <div class="col-categories">
+                    <h2>Electric Guitar</h2>
+                    <img src="../assets/home/categories/electric-guitar.png" alt="electric guitar">
+                    <div class="categories-rectangle"></div>
+                    <p>An electric guitar is a guitar that produces sound by vibrating strings over a pickup that converts the vibrations into electrical signals.</p>
+                </div>
+            </a>
+            <a href="gallery.html#bass-guitar">
+                <div class="col-categories">
+                    <h2>Bass Guitar</h2>
+                    <img src="../assets/home/categories/bass-guitar.png" alt="bass guitar">
+                    <div class="categories-rectangle"></div>
+                    <p>A bass guitar is the lowest-pitch member of the guitar family. It produces sound when its metal bass strings vibrate over one or more magnetic pickups.</p>
+                </div>
+            </a>
         </div>
         <div class="row-categories">
-            <div class="col-categories">
-                <h2>Acoustic Guitar</h2>
-                <img src="../assets/home/categories/acoustic-guitar.png" alt="acoustic guitar">
-                <div class="categories-rectangle"></div>
-                <p>An acoustic guitar is an instrument in the string family. When a string is plucked, its vibration is transmitted from the bridge, resonating throughout the top of the guitar.</p>
-            </div>
-            <div class="col-categories">
-                <h2>Silent Guitar</h2>
-                <img src="../assets/home/categories/silent-guitar.png" alt="silent guitar">
-                <div class="categories-rectangle"></div>
-                <p>A silent guitar is a type of guitar with a solid or chambered body that converts the vibration of the strings into electric current using a piezoelectric pickup.</p>
-            </div>
-            <div class="col-categories">
-                <h2>Amplifier</h2>
-                <img src="../assets/home/categories/amplifier.png" alt="amplifier">
-                <div class="categories-rectangle"></div>
-                <p>A guitar amplifier or amp is an electronic device or system that strengthens the weak electrical signal from a pickup on a guitar.</p>
-            </div>
+            <a href="gallery.html#acoustic-guitar"></a>
+                <div class="col-categories">
+                    <h2>Acoustic Guitar</h2>
+                    <img src="../assets/home/categories/acoustic-guitar.png" alt="acoustic guitar">
+                    <div class="categories-rectangle"></div>
+                    <p>An acoustic guitar is an instrument in the string family. When a string is plucked, its vibration is transmitted from the bridge, resonating throughout the top of the guitar.</p>
+                </div>
+            </a>
+            <a href="gallery.html#silent-guitar">
+                <div class="col-categories">
+                    <h2>Silent Guitar</h2>
+                    <img src="../assets/home/categories/silent-guitar.png" alt="silent guitar">
+                    <div class="categories-rectangle"></div>
+                    <p>A silent guitar is a type of guitar with a solid or chambered body that converts the vibration of the strings into electric current using a piezoelectric pickup.</p>
+                </div>
+            </a>
+            <a href="gallery.html#amplifier">
+                <div class="col-categories">
+                    <h2>Amplifier</h2>
+                    <img src="../assets/home/categories/amplifier.png" alt="amplifier">
+                    <div class="categories-rectangle"></div>
+                    <p>A guitar amplifier or amp is an electronic device or system that strengthens the weak electrical signal from a pickup on a guitar.</p>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -312,11 +324,9 @@
             <img src="../assets/footer/subcribe-bg-pic.jpg" alt="">
             <div class="subscribe-form">
                 <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-                <form action="">
+                <form action="" onsubmit="" method="POST">
                     <input type="text" id="name" placeholder="Enter your name (min. 2 characters)">
-                    <p id="name-error-message"></p>
                     <input type="text" id="email" placeholder="Enter your email (format: address@email.com)">
-                    <p id="email-error-message"></p>
                     <input type="submit" id="subscribe-btn" value="Subscribe!">
                 </form>
             </div>
