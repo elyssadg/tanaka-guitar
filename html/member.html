@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TANAKA Guitar</title>
+    <link rel="icon" type="image/png" href="../assets/navigation-bar/favicon.png">
 
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +23,6 @@
                 <nav>
                     <ul class="nav-menu-center">
                         <li><a href="home.html">Home</a></li>
-                        <li><a href="home.html#categories">Categories</a></li>
                         <li><a href="gallery.html">Gallery</a></li>
                         <li><a href="about-us.html">About Us</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-header">
+        <div class="member-header">
             <div class="header-text">
                 <p>Be a Part of</p>
                 <h1>TANAKA Guitar</h1>
@@ -43,47 +43,85 @@
             </div>
         </div>
     </header>
-   <section class="join">
-       <h2>Join Us Now!</h2>
+   <section class="container join-form">
+       <h1>Join Us Now!</h1>
        <p>Enjoy extra promotions and keep updated with TANAKA news by joining our family</p>
-       <div class="join-container">
-            <div class="leftpic">
+       <div class="join-content">
+            <div class="col-form-img">
                 <img src="../assets/member/image_2022-06-11_23-38-12.png">
             </div>
-            <div class="first">
-                <input type="text" placeholder="Enter your first name" required>
-            </div>
-            <div class="last">
-                <input type="text" placeholder="Enter your last name" required>
-
-            </div>
-            <div class="email">
-                <input type="email" placeholder="Enter your email address (format: address@gmail.com)" required>
-            </div>
-            <div class="phone">
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)" pattern="[0][8][0-9]{10}" required>
-            </div>
-            <div class="gender">
-                <select id="gender" name="gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
+            <form class="col-form" action="" onsubmit="" method="POST">
+                <div class="first-line">
+                    <div class="input-container small">
+                        <h5>First Name</h5>
+                        <div class="input-box">
+                            <img src="../assets/navigation-bar/user-active.png" alt="">
+                            <input type="text" id="first-name" placeholder="Enter your first name">
+                        </div>
+                    </div>
+                    <div class="input-container small">
+                        <h5>Last Name</h5>
+                        <div class="input-box">
+                            <img src="../assets/navigation-bar/user-active.png" alt="">
+                            <input type="text" id="last-name" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <h5>Email</h5>
+                        <div class="input-box">
+                            <img src="../assets/contact-us/mail-icon.png" alt="mail icon">
+                            <input type="text" id="email" placeholder="Enter your email (format: address@gmail.com)">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <h5>Email</h5>
+                        <div class="input-box">
+                            <img src="../assets/contact-us/phone-icon.png" alt="phone icon">
+                            <input type="text" id="phone-number" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
+                        </div>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-container">
+                        <h5>Gender</h5>
+                        <div class="input-box">
+                            <img src="../assets/member/gender.png" alt="gender icon">
+                            <input type="text" id="gender" placeholder="Choose your gender" list="user-gender">
+                            <datalist id="user-gender">
+                            <option value="Male"></option>
+                            <option value="Female"></option>
+                            <option value="I prefer not to say"></option>
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-row">
+                    <input type="checkbox" id="subscribe-news" name="subscribe-news" value="subscribe">
+                    <label for="subscribe-news">Get daily letter from TANAKA News</label><br><br>
+                    <input type="checkbox" id="terms-condition" name="terms-condition" value="terms">
+                    <label for="terms-condition">I agree to all terms and conditions</label><br>
+                </div>
+                <input type="submit" value="Join Now">
+            </form>
        </div>
    </section>
 
-   <section class="benefit">
-        <h2>Benefit</h2>
+   <section class="container benefit">
+        <h1>Benefit</h1>
         <div class="benefit-container">
-            <div class="item1">
+            <div class="item item-1">
                 <img src="../assets/member/image_2022-06-12_00-00-06.png">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy </p>
             </div>
-            <div class="item2">
+            <div class="item item-2">
                 <img src="../assets/member/image_2022-06-12_00-00-12.png">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy </p>
             </div>
-            <div class="item3">
+            <div class="item item-3">
                 <img src="../assets/member/image_2022-06-12_00-00-48.png">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy </p>
             </div>
