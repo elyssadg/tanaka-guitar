@@ -297,6 +297,9 @@ a{
     .container{
         margin: 80px 10px;
     }
+    .contact-us-header{
+        height: 380px;
+    }
     .header-text h1{
         font-family: 'Lalezar', cursive;
         font-size: 80px;
