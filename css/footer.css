@@ -60,6 +60,7 @@
     cursor: pointer;
 }
 
+
 #name-error-message, #email-error-message{
     margin: 5px 0 35px 100px;
     color: white;

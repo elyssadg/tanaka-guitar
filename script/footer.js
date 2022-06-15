@@ -4,6 +4,7 @@ let nameError = document.getElementById("name-error-message");
 let emailError = document.getElementById("email-error-message");
 
 function validateSubscribeForm(){
+    alert("Hello! I am an alert box!!");
     if (username.value.length < 2){
         nameError.innerHTML = "Username is shorter than 2 characters"
     } else {

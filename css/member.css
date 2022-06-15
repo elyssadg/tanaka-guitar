@@ -145,7 +145,7 @@ a{
     color: rgba(0, 0, 0, 0.4);
 }
 
-.col-form input[type="submit"]{
+/* .col-form input[type="submit"]{
     margin-top: 90px;
     width: 172px;
     height: 37px;
@@ -160,6 +160,46 @@ a{
 }
 
 .col-form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #EA7B14;
+    color: white;
+} */
+
+.click button{
+    margin-top: 90px;
+    width: 172px;
+    height: 37px;
+    background-color: transparent;
+    color: #EA7B14;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 2px solid #EA7B14;
+    transition: all 300ms ease-out 0s;
+}
+
+.click button:hover{
+    cursor: pointer;
+    background-color: #EA7B14;
+    color: white;
+}
+
+.click1 button{
+    margin-top: 90px;
+    width: 172px;
+    height: 37px;
+    background-color: transparent;
+    color: #EA7B14;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 2px solid #EA7B14;
+    transition: all 300ms ease-out 0s;
+}
+
+.click1 button:hover{
     cursor: pointer;
     background-color: #EA7B14;
     color: white;

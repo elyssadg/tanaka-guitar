@@ -18,6 +18,7 @@
     <!-- JS -->
     <script defer src="../script/navigation_bar.js"></script>
     <script defer src="../script/footer.js"></script>
+    <script src="../script/member.js"></script>
 </head>
 <body>
     <header>
@@ -65,21 +66,23 @@
             <div class="col-form-img">
                 <img src="../assets/member/image_2022-06-11_23-38-12.png">
             </div>
-            <form class="col-form" action="" onsubmit="" method="POST">
+            <form class="col-form" method="POST">
                 <div class="first-line">
                     <div class="input-container small">
                         <h5>First Name</h5>
                         <div class="input-box">
                             <img src="../assets/navigation-bar/user-active.png" alt="">
-                            <input type="text" id="first-name" placeholder="Enter your first name">
+                            <input type="text" id="first" placeholder="Enter your first name">
                         </div>
+                        <div id="errorFirst" class="color-red"></div>
                     </div>
                     <div class="input-container small">
                         <h5>Last Name</h5>
                         <div class="input-box">
                             <img src="../assets/navigation-bar/user-active.png" alt="">
-                            <input type="text" id="last-name" placeholder="Enter your last name">
+                            <input type="text" id="last" placeholder="Enter your last name">
                         </div>
+                        <div id="errorLast" class="color-red"></div>
                     </div>
                 </div>
                 <div class="input-row">
@@ -96,7 +99,7 @@
                         <h5>Email</h5>
                         <div class="input-box">
                             <img src="../assets/contact-us/phone-icon.png" alt="phone icon">
-                            <input type="text" id="phone-number" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
+                            <input type="text" id="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
                         </div>
                     </div>
                 </div>
@@ -120,7 +123,9 @@
                     <input type="checkbox" id="terms-condition" name="terms-condition" value="terms">
                     <label for="terms-condition">I agree to all terms and conditions</label><br>
                 </div>
-                <input type="submit" value="Join Now">
+                <div class="click">
+                    <button type="button" class="send-button" onclick="validateForm()">Join Us</button>
+                </div>
             </form>
        </div>
    </section>
