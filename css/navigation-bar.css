@@ -16,11 +16,9 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
 }
 
 .logo{
-    float: left;
     padding-top: 5px;
 }
 
@@ -29,13 +27,16 @@ body{
 }
 
 .nav-menu-center{
-    float: center;
+    width: 50%;
 }
 
 .nav-menu-center li{
-    list-style: none;
     display: inline-block;
-    padding: 0 27px;
+    list-style: none;
+}
+
+.nav-menu-center li:not(:last-child){
+    margin-right: 10%;
 }
 
 .nav-menu-center li a{
@@ -56,7 +57,10 @@ body{
 
 .nav-menu-right img{
     width: 35px; height: 35px;
-    padding-left: 30px;
+}
+
+.nav-menu-right a:not(:last-child){
+    margin-right: 30px;
 }
 
 .nav-menu-center .active a{

@@ -95,14 +95,6 @@ a{
     justify-content: space-between;
 }
 
-@media(max-width: 800px){
-    .row-best-sellers{
-        grid-template-columns: auto auto;
-        gap: 10px;
-        justify-content: space-evenly;
-    }
-}
-
 .best-sellers .row-best-sellers:nth-child(3){
     margin-top: 60px;
 }
