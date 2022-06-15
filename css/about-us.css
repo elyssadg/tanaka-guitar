@@ -27,12 +27,11 @@ a{
 .header-text{
     color: white;
     position: absolute;
-    width: 870px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 500px;
 }
 
 .header-text h1{
@@ -40,6 +39,7 @@ a{
     font-size: 100px;
     font-weight: 400;
     letter-spacing: 8px;
+    line-height: 80px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -69,7 +69,7 @@ a{
 
 .mission{
     position: relative;
-    width: 1285px;
+    width: 100%;
     height: 350px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../assets/about-us/mission-bg.jpeg);
     background-position: center;
@@ -80,7 +80,7 @@ a{
     color: white;
     padding-top: 15px;
     position: absolute;
-    width: 870px;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -143,7 +143,7 @@ a{
 }
 
 .story-row img{
-    width: 350px; height: 350px;
+    width: 30%; height: 30%;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
 .our-story p{
@@ -153,8 +153,8 @@ a{
 }
 
 .expect img{
-    width: 1285px;
-    height: 456px;
+    width: 100%;
+    height: 100%;
     padding: 40px 0;
 }
 .about-tanaka h1{
@@ -181,19 +181,11 @@ a{
 
 
 @media(max-width: 800px){
-    .story-row img{
-        width: 200px;
-        height: 200px;
-        padding: 5px;
-    }
     .container{
         margin: 80px 10px;
     }
-    .mission{
-        width: 750px;
-    }
     .mission h1{
-        width: 670px;
+        font-size: 50px;
     }
     .expect img{
         width: 750px;
