@@ -3,10 +3,10 @@ body{
 }
 
 .nav-container{
-    /* position: fixed; */
-    
+    position: fixed;
     top: 0;
     width: 100%;
+    max-width: 1440px;
     max-height: 83px;
     background-color: white;
     border-bottom: 0.5px solid rgba(0,0,0, 0.2);

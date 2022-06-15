@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="../assets/navigation-bar/favicon.png">
 
     <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="../css/navigation-bar.css">
@@ -17,6 +17,7 @@
 
     <!-- JS -->
     <script defer src="../script/navigation_bar.js"></script>
+    <script defer src="../script/footer.js"></script>
 </head>
 <body>
     <header>
@@ -92,18 +93,61 @@
         </div>
         <a href="contact-us.html"><button>Visit Us</button></a>
     </section>
+    
     <footer>
         <div class="subscribe">
-            <img src="../assets/footer/subcribe-bg-pic.jpg" alt="">
             <div class="subscribe-form">
                 <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-                <form action="">
+                <form method="POST">
                     <input type="text" id="name" placeholder="Enter your name (min. 2 characters)">
-                    <p id="name-error-message"></p>
-                    <input type="text" id="email" placeholder="Enter your email (format: address@email.com)">
-                    <p id="email-error-message"></p>
-                    <input type="submit" id="subscribe-btn" value="Subscribe!">
+                    <div id="name-error-message"></div>
+                    <input type="text" id="email" placeholder="Enter your email (format: address@gmail.com)"><br>
+                    <div id="email-error-message"></div>
+                    <input type="submit" onclick="validateSubscribeForm()" id="subscribe-btn" value="Subscribe!">
                 </form>
+            </div>
+            <div class="footer-container">
+                <div class="first-col">
+                    <h1>Our Stores</h1>
+                    <ul>
+                        <li><a href="">Jakarta</a></li>
+                        <li><a href="">Yogyakarta</a></li>
+                        <li><a href="">Surabaya</a></li>
+                        <li><a href="">Denpasar</a></li>
+                        <li><a href="">Pontianak</a></li>
+                    </ul>
+                </div>
+                <div class="second-col">
+                    <h1>Informations</h1>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Track My Order</a></li>
+                        <li><a href="member.html">Membership</a></li>
+                        <li><a href="">Terms & Condition</a></li>
+                    </ul>
+                </div>
+                <div class="third-col">
+                    <div class="contact">
+                        <h1>Contact Us</h1>
+                        <h2>0213-2012390</h2>
+                        <p>tanaka.guitar@tanaka.com</p>
+                    </div>
+                    <div class="social-media">
+                        <h1>Follow Us</h1>
+                        <div class="social-img">
+                            <a href="https://facebook.com/"><img src="../assets/footer/social-media/facebook.png" alt=""></a>
+                            <a href="https://youtube.com/"><img src="../assets/footer/social-media/youtube.png" alt=""></a>
+                            <a href="https://twitter.com/"><img src="../assets/footer/social-media/twitter.png" alt=""></a>
+                            <a href="https://instagram.com/"><img src="../assets/footer/social-media/instagram.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="credit">
+                &copy; 2022 Tanaka Guitar All Right Reserved
+                <br>
+                Developed by Elyssa Davina Giovanni n' Guido William
             </div>
         </div>
     </footer>
