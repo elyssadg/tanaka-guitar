@@ -79,10 +79,10 @@ a{
 
 .container h1{
     padding-bottom: 40px;
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
-    text-align: left;
-    letter-spacing: 0.5px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 /* -- Best Sellers Section -- */
@@ -305,9 +305,6 @@ a{
 }
 
 /* -- Categories Section -- */
-#categories h1{
-    text-align: right;
-}
 
 /* -- Categories Row -- */
 .row-categories{
@@ -448,7 +445,7 @@ a{
 
     .header-text{
         width: 80%;
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -55%);
     }
 
     .row-brands{
@@ -457,66 +454,107 @@ a{
 }
 
 @media (max-width: 1000px) {
+    .home-header{
+        margin-top: 50px;
+    }
+
+    .header-text{
+        transform: translate(-50%, -58%);
+    }
+
     .row-best-sellers{
         justify-content: center;
         gap: 40px 20px;
     }
+
 }
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
+    .container{
+        margin: 60px auto;
+        width: 80%;
+    }
+
+    .container h1{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 800px) {
     .home-header{
-        margin-top: 50px;
-        height: 380px;
+        height: 500px;
     }
 
     .header-text{
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -50%);
     }
     
     .header-text h1{
-        font-size: 40px;
+        font-size: 50px;
         letter-spacing: 2px;
     }
 
     .header-text p{
-        font-size: 15px;
+        font-size: 17px;
     }
     
     .header-text a button{
-        margin-top: 40px;
-        font-size: 16px;
+        font-size: 18px;
         padding: 7px 14px;
         border-width: 2px;
     }
 
     .row-best-sellers{
         gap: 60px;
+    } 
+
+    .slide img{
+        border-radius: 10px;
+    }
+
+    .prev-btn img, .next-btn img{
+        width: 25px; height: 25px;
+    }
+
+    .prev-btn{
+        left: 15px;
+    }
+
+    .next-btn{
+        right: 15px;
+    }
+
+    .col-brands{
+        position: relative;
+        padding: 42.4px 14.4px;
+        width: 147.2px;
+        height: 88.8px;
+    }
+    
+    .col-brands a{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        width: 110px;
     }
 }
 
 @media (max-width: 700px) {
+    .header-text{
+        transform: translate(-50%, -55%);
+    }
+
     .row-best-sellers{
         gap: 40px;
     }
 }
 
 @media (max-width: 500px) {
-    .home-header{
-        height: 300px;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
-
-    .header-text p{
-        font-size: 12px;
-    }
-
     .header-text a button{
-        margin-top: 30px;
-        font-size: 12px;
-        padding: 4px 10px;
+        margin-top: 25px;
     }
 
     .container{
@@ -525,14 +563,33 @@ a{
     }
 
     .container h1{
-        font-size: 20px;
+        font-size: 23px;
         padding-bottom: 30px;
     }
 }
 
 @media (max-width: 450px) {
+    .home-header{
+        height: 450px;
+    }
+
+    .header-text{
+        transform: translate(-50%, -50%);
+    }
+    
+    .header-text h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .header-text p{
+        font-size: 14px;
+    }
+    
     .header-text a button{
-        margin-top: 25px;
+        margin-top: 40px;
+        font-size: 15px;
+        padding: 5px 12px;
     }
 
     .col-best-sellers{
@@ -637,50 +694,5 @@ a{
     .col-brands a{
         bottom: 15px;
         font-size: 10px;
-    }
-}
-
-@media (max-width: 850px) {
-    .container{
-        margin: 60px auto;
-        width: 80%;
-    }
-
-    .container h1{
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 800px) {
-    .slide img{
-        border-radius: 10px;
-    }
-
-    .prev-btn img, .next-btn img{
-        width: 25px; height: 25px;
-    }
-
-    .prev-btn{
-        left: 15px;
-    }
-
-    .next-btn{
-        right: 15px;
-    }
-
-    .col-brands{
-        position: relative;
-        padding: 42.4px 14.4px;
-        width: 147.2px;
-        height: 88.8px;
-    }
-    
-    .col-brands a{
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 11px;
-        width: 110px;
     }
 }

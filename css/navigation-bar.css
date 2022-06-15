@@ -2,6 +2,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+header{
+    width: 100%;
+}
+
 .nav-container{
     position: fixed;
     top: 0;
@@ -68,11 +72,12 @@ body{
 
 #hamburger {
     display: none;
-    transition: margin-left 300ms ease-out;
+    transition: all 300ms ease-out 0s;
 }
 
 .navbar{
     padding: 12px 5%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
