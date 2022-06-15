@@ -8,6 +8,7 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -30,7 +31,7 @@ a{
     color: white;
     position: absolute;
     width: 60.5%;
-    height: 413px;
+    height: 66%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -51,9 +52,8 @@ a{
 }
 
 .header-text a button{
-    margin-top: 75px;
-    width: 227px;
-    height: 54px;
+    margin-top: 70px;
+    padding: 9px 17px;
     background-color: transparent;
     color: #EA7B14;
     font-family: 'Montserrat', sans-serif;
@@ -70,8 +70,32 @@ a{
     color: white;
 }
 
+@media (max-width: 800px) {
+    .home-header{
+        height: 380px;
+    }
+    .header-text{
+        width: 80%;
+        height: 75%;
+    }
+    .header-text h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .header-text p{
+        font-size: 15px;
+    }
+    .header-text a button{
+        margin-top: 40px;
+        font-size: 16px;
+        padding: 7px 14px;
+        border-width: 2px;
+    }
+}
+
 .container{
-    margin: 80px 120px;
+    margin: 80px auto;
+    width: 84%;
     max-width: 1200px;
 }
 
@@ -83,6 +107,16 @@ a{
     letter-spacing: 0.5px;
 }
 
+@media (max-width: 800px) {
+    .container{
+        margin: 60px auto;
+        width: 80%;
+    }
+    .container h1{
+        font-size: 25px;
+    }
+}
+
 /* -- Best Sellers Section -- */
 .best-sellers{
     text-align: center;
@@ -90,13 +124,23 @@ a{
 
 /* -- Best Seller Row -- */
 .row-best-sellers{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    gap: 60px;
 }
 
-.best-sellers .row-best-sellers:nth-child(3){
-    margin-top: 60px;
+@media (max-width: 1200px) {
+    .row-best-sellers{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    .row-best-sellers{
+        justify-content: center;
+    }
 }
 
 /* -- Best Seller Catalogue -- */
@@ -233,15 +277,16 @@ a{
 /* -- What's On Section -- */
 .slider-whats-on{
     position: relative;
-    max-width: 1200px;
 }
 
 .slide{
+    width: 100%;
     display: none;
     transition: 300ms ease-out 0s;
 }
 
 .slide img{
+    width: 100%;
     border: 0.5px solid rgb(121, 46, 0);
     border-radius: 20px;
 }
@@ -256,6 +301,7 @@ a{
     from{opacity: 0;}
     from{opacity: 1;}
 }
+
 .indicator{
     display: flex;
     margin-top: 25px;
@@ -303,6 +349,21 @@ a{
     background: white;
 }
 
+@media (max-width: 800px) {
+    .slide img{
+        border-radius: 10px;
+    }
+    .prev-btn img, .next-btn img{
+        width: 25px; height: 25px;
+    }
+    .prev-btn{
+        left: 15px;
+    }
+    .next-btn{
+        right: 15px;
+    }
+}
+
 /* -- Categories Section -- */
 #categories h1{
     text-align: right;
@@ -311,11 +372,10 @@ a{
 /* -- Categories Row -- */
 .row-categories{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-#categories .row-categories:nth-child(3){
-    margin-top: 35px;
+    gap: 20px;
+    width: 100%;
 }
 
 /* -- Guitar Categories -- */
@@ -323,7 +383,6 @@ a{
     width: 365px; height: 350px;
     position: relative;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
 }
 
@@ -387,15 +446,19 @@ a{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 1350px) {
+    .row-categories{
+        justify-content: space-around;
+    }
+}
+
 /* -- Brands Section -- */
 /* -- Brands Row -- */
 .row-brands{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.brands .row-brands:nth-child(3){
-    margin-top: 40px;
+    gap: 40px;
 }
 
 /* -- Brands Circle -- */
@@ -429,4 +492,14 @@ a{
 
 .col-brands:hover a{
     opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .row-brands{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 800px) {
+    
 }
