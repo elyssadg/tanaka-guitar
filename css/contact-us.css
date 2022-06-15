@@ -8,6 +8,7 @@ html{
 
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 a{
@@ -50,7 +51,9 @@ a{
 }
 
 .container{
-    margin: 80px 120px;
+    margin: 80px auto;
+    width: 84%;
+    max-width: 1200px;
 }
 
 .container h1{
@@ -63,7 +66,6 @@ a{
 
 .map{
     width: 100%;
-    margin: auto;
 }
 
 .map iframe{
@@ -80,14 +82,13 @@ a{
     height: 50px;
     margin-right: 20px;
 }
-@media (min-width:801px){
-    .social-row a img:hover{
-        transform: scale(1.03);
-    }
+
+.social-row a img:hover{
+    transform: scale(1.03);
 }
 
 .click button{
-    margin-top: 10px;
+    margin-top: 30px;
     width: 150px;
     height: 40px;
     background-color: transparent;
@@ -118,7 +119,6 @@ a{
     font-weight: 700;
 }
 
-
 .contact-col{
     flex-basis: 48%;
     padding-bottom: 10px;
@@ -135,6 +135,7 @@ a{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .contact-col input, .contact-col textarea{
@@ -144,16 +145,16 @@ a{
     border-radius: 20px;
     border: 0.5px solid #792E00;
     color: black;
-    padding-left: 40px;
     width: 700px;
     margin-top: 20px;
 }
+
 .color-red{
     color: red;
-    font-size: 15px;
-    margin-left: 40px;
-
+    font-size: 12px;
+    margin-left: 20px;
 }
+
 .contact-col input{
     height: 50px;
 }
@@ -167,6 +168,11 @@ a{
 ::placeholder{
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
+    transform: translateX(40px);
+}
+
+#errorUser, #errorPhone, #errorEmail, #errorSubject, #errorMessage{
+    margin-top: 5px;
 }
 
 .store-box{
@@ -181,11 +187,12 @@ a{
 
 .store{
     position: relative;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-areas: 'jakarta yogyakarta surabaya''jakarta denpasar pontianak ';
     justify-content: center;
     margin-top: 60px;
-    grid-column-gap: 60px;
+    gap: 60px;
 }
 
 .store img{
@@ -288,53 +295,70 @@ a{
     opacity: 1;
 }
 
-@media(max-width: 800px){
-    .story-row img{
-        width: 200px;
-        height: 200px;
-        padding: 5px;
-    }
+@media (max-width: 850px) {
     .container{
-        margin: 80px 10px;
+        margin: 60px auto;
+        width: 80%;
     }
+
+    .container h1{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 800px){
     .contact-us-header{
+        margin-top: 65.5px;
         height: 380px;
     }
     .header-text h1{
         font-family: 'Lalezar', cursive;
         font-size: 80px;
     }
-    
     .header-text p{
         font-size:40px;
+    }
+    .store{
+        gap: 40px;
     }
     .row{
         flex-direction: column;
     }
     .contact-col{
-        transform: translateX();
+        margin-top: 30px;
     }
     .contact-col h5, .contact-col p{
-       transform: translateX(70px);
+       transform: translateX(60px);
+    }
+    .contact-col h5{
+        font-size: 20px;
+    }
+    .contact-col p{
+        font-size: 16px;
     }
     .contact-col img{
         position: absolute;
         transform: translateY(10px);
-        width: 45px;
-        height: 45px;
+        width: 35px;
+        height: 35px;
     }
     .social-row img{
         position: relative;
         transform: translateX(70px);
-        justify-content: space-evenly;
     }
-    .store{
-        position: relative;
-        display: grid;
-        grid-template-areas: 'jakarta''yogyakarta''surabaya' 'denpasar' 'pontianak';
-        justify-content: center;
+    .contact-col input, .contact-col textarea{
+        width: 100%;
     }
-    .store-box{
-        margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+    .container{
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .container h1{
+        font-size: 20px;
+        padding-bottom: 30px;
     }
 }

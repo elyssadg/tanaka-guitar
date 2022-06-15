@@ -70,73 +70,7 @@ a{
     color: white;
 }
 
-@media (max-width: 1200px) {
-    .header-text{
-        width: 80%;
-    }
-}
-
-@media (max-width: 900px) {
-    .home-header{
-        margin-top: 65.5px;
-        height: 380px;
-    }
-
-    .header-text h1{
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    .header-text p{
-        font-size: 15px;
-    }
-    
-    .header-text a button{
-        margin-top: 40px;
-        font-size: 16px;
-        padding: 7px 14px;
-        border-width: 2px;
-    }
-}
-
-@media (max-width: 500px) {
-    .home-header{
-        height: 300px;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
-
-    .header-text p{
-        font-size: 12px;
-    }
-
-    .header-text a button{
-        margin-top: 30px;
-        font-size: 12px;
-        padding: 4px 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    .header-text h1{
-        font-size: 25px;
-    }
-
-    .header-text p{
-        font-size: 10.5px;
-    }
-    
-    .header-text a button{
-        margin-top: 30px;
-        font-size: 12px;
-        padding: 3px 10px;
-        border-width: 2px;
-    }
-}
-
-
+/* -- Container -- */
 .container{
     margin: 80px auto;
     width: 84%;
@@ -151,16 +85,6 @@ a{
     letter-spacing: 0.5px;
 }
 
-@media (max-width: 850px) {
-    .container{
-        margin: 60px auto;
-        width: 80%;
-    }
-    .container h1{
-        font-size: 25px;
-    }
-}
-
 /* -- Best Sellers Section -- */
 .best-sellers{
     text-align: center;
@@ -173,31 +97,6 @@ a{
     justify-content: space-between;
     width: 100%;
     gap: 60px;
-}
-
-@media (max-width: 1200px) {
-    .row-best-sellers{
-        gap: 40px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .row-best-sellers{
-        justify-content: center;
-        gap: 40px 20px;
-    }
-}
-
-@media (max-width: 900px) {
-    .row-best-sellers{
-        gap: 60px;
-    }
-}
-
-@media (max-width: 700px) {
-    .row-best-sellers{
-        gap: 40px;
-    }
 }
 
 /* -- Best Seller Catalogue -- */
@@ -226,7 +125,7 @@ a{
 }
 
 .guitar-name{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     color: rgb(121, 46, 0);
 }
@@ -255,7 +154,6 @@ a{
 }
 
 .stock-no-disc{
-    font-size: 10px;
     font-weight: 600;
     color: rgb(55, 143, 1);
     font-size: 13px;
@@ -274,8 +172,8 @@ a{
 
 .price-no-disc{
     position: absolute;
-    bottom: 20px;
     left: 50%;
+    bottom: 20px;
     transform: translateX(-50%);
     color: #EA7B14;
     font-size: 18px;
@@ -406,24 +304,6 @@ a{
     background: white;
 }
 
-@media (max-width: 800px) {
-    .slide img{
-        border-radius: 10px;
-    }
-
-    .prev-btn img, .next-btn img{
-        width: 25px; height: 25px;
-    }
-
-    .prev-btn{
-        left: 15px;
-    }
-
-    .next-btn{
-        right: 15px;
-    }
-}
-
 /* -- Categories Section -- */
 #categories h1{
     text-align: right;
@@ -506,12 +386,6 @@ a{
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 1350px) {
-    .row-categories{
-        justify-content: space-around;
-    }
-}
-
 /* -- Brands Section -- */
 /* -- Brands Row -- */
 .row-brands{
@@ -554,8 +428,259 @@ a{
     opacity: 1;
 }
 
+@media (max-width: 1350px) {
+    .row-categories{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1300px) {
+    .row-best-sellers{
+        gap: 40px;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 1200px) {
+    .home-header{
+        height: 550px;
+    }
+
+    .header-text{
+        width: 80%;
+        transform: translate(-50%, -60%);
+    }
+
     .row-brands{
         justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1000px) {
+    .row-best-sellers{
+        justify-content: center;
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-header{
+        margin-top: 50px;
+        height: 380px;
+    }
+
+    .header-text{
+        transform: translate(-50%, -55%);
+    }
+    
+    .header-text h1{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .header-text p{
+        font-size: 15px;
+    }
+    
+    .header-text a button{
+        margin-top: 40px;
+        font-size: 16px;
+        padding: 7px 14px;
+        border-width: 2px;
+    }
+
+    .row-best-sellers{
+        gap: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .row-best-sellers{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-header{
+        height: 300px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    .header-text p{
+        font-size: 12px;
+    }
+
+    .header-text a button{
+        margin-top: 30px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .container{
+        margin: 40px auto;
+        width: 80%;
+    }
+
+    .container h1{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-text a button{
+        margin-top: 25px;
+    }
+
+    .col-best-sellers{
+        width: 220px;
+        height: 350px;
+    }
+
+    .guitar-name{
+        font-size: 14px;
+    }
+
+    .colors{
+        padding: 9px 0;
+    }
+
+    .color-circle{
+        width: 13px; height: 13px;
+    }
+
+    .stock{
+        font-size: 9px;
+    }
+
+    .stock-no-disc{
+        font-size: 11px;
+    }
+
+    .price-before-disc{
+        text-decoration-line: line-through;
+        font-size: 10px;
+    }
+
+    .price{
+        color: #EA7B14;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .price-no-disc{
+        bottom: 15px;
+        font-size: 15px;
+    }
+
+    .best-sellers a button{
+        margin-top: 40px;
+        width: 140px;
+        height: 30px;
+        font-size: 12px;
+        border-radius: 30px;
+    }
+    
+    .prev-btn img, .next-btn img{
+        width: 18px; height: 18px;
+    }
+    
+    .col-categories{
+        width: 300px; height: 290px;
+    }
+    
+    .col-categories h2{
+        top: 55%;
+        left: 40px;
+        width: 100px;
+        font-size: 25px;
+    }
+    
+    .categories-rectangle{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .col-categories img{
+        width: auto;
+        height: 275px;
+    }
+    
+    .col-categories p{
+        top: 280px;
+        width: 148px;
+        opacity: 0;
+        font-size: 12px;
+    }
+
+    .col-categories:hover h2{
+        font-size: 20px;
+        left: 28px;
+        top: 112px;
+    }
+
+    .col-categories:hover p{
+        opacity: 1;
+        top: 150px;
+    }
+    
+    .col-brands{
+        position: relative;
+        padding: 31.8px 10.8px;
+        width: 110px;
+        height: 66.6px;
+    }
+    
+    .col-brands a{
+        bottom: 15px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .container{
+        margin: 60px auto;
+        width: 80%;
+    }
+
+    .container h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    .slide img{
+        border-radius: 10px;
+    }
+
+    .prev-btn img, .next-btn img{
+        width: 25px; height: 25px;
+    }
+
+    .prev-btn{
+        left: 15px;
+    }
+
+    .next-btn{
+        right: 15px;
+    }
+
+    .col-brands{
+        position: relative;
+        padding: 42.4px 14.4px;
+        width: 147.2px;
+        height: 88.8px;
+    }
+    
+    .col-brands a{
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        width: 110px;
     }
 }

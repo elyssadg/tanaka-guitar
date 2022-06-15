@@ -23,14 +23,12 @@
         <div class="nav-container">
             <div class="navbar">
                 <a href="#" class="logo"><img src="../assets/navigation-bar/logo.png" alt="tanaka guitar logo"></a>
-                <nav>
-                    <ul class="nav-menu-center">
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li class="active"><a href="#">Contact Us</a></li>
-                    </ul>
-                </nav>
+                <ul class="nav-menu-center">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li class="active"><a href="#">Contact Us</a></li>
+                </ul>
                 <div class="nav-menu-right">
                     <a href=""><img src="../assets/navigation-bar/wishlist.png" alt="wishlist icon"></a>
                     <a href=""><img src="../assets/navigation-bar/bag.png" alt="bag icon"></a>
@@ -63,7 +61,7 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15865.205554032125!2d106.6489932!3d-6.2239336!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf75c5296d0a385e4!2sBINUS%20UNIVERSITY%2C%20Kampus%20Alam%20Sutera!5e0!3m2!1sen!2sid!4v1654777517447!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <section class="store">
+        <div class="store">
             <div class="jakarta store-box">
                 <img src="../assets/contact-us/jakarta.png">
                 <div class="layer">
@@ -100,8 +98,6 @@
                         <a href="https://www.google.com/maps">See Maps</a>
                 </div>
             </div>
-        </section>
-        <section class="store">
             <div class="denpasar store-box">
                 <img src="../assets/contact-us/denpasar.png">
                 <div class="layer">
@@ -126,47 +122,45 @@
                     <a href="https://www.google.com/maps">See Maps</a>
                 </div>
             </div>
-        </section>
-        <div class=" contact-us">
-            <div class="row">
-                <div class="contact-col">
-                    <div>
-                        <a href="gmail.com"><img src="../assets/contact-us/mail-icon.png"></a>
-                            <h5>Email, Tanaka Guitar</h5>
-                            <p>tanaka.guitar@tanaka.com</p>
-                    </div>
-                    <div>
-                        <a href="https://api.whatsapp.com/send/?phone=6285208696969&text&app_absent=0"><img src="../assets/contact-us/phone-icon.png"></a>
-                            <h5>0213-2012390, Tanaka Guitar</h5>
-                            <p>Monday to Sunday, 10 am to 10 pm WIB</p>
-                    </div>
-                    <div>
-                        <h5>Social Media</h5>
-                        <div class="social-row">
-                            <a href="https://facebook.com"><img src="../assets/footer/social-media/facebook.png"></a>
-                            <a href="https://youtube.com"><img src="../assets/footer/social-media/youtube.png"></a>
-                            <a href="https://instagram.com"><img src="../assets/footer/social-media/instagram.png"></a>
-                            <a href="https://twitter.com"><img src="../assets/footer/social-media/twitter.png"></a>
-                        </div>
-                    </div>
-    
+        </div>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <a href="gmail.com"><img src="../assets/contact-us/mail-icon.png"></a>
+                        <h5>Email, Tanaka Guitar</h5>
+                        <p>tanaka.guitar@tanaka.com</p>
                 </div>
-                <div class="contact-col">
-                    <form method="POST">
-                        <input type="text" id="username" placeholder="Enter your name (min. 2 characters)">
-                        <div id="errorUser" class="color-red"></div>
-                        <input type="text" id="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
-                        <div id="errorPhone" class="color-red"></div>
-                        <input type="email" id="email" placeholder="Enter your email address (format: address@gmail.com)">
-                        <div id="errorEmail" class="color-red"></div>
-                        <input type="text" id="subject" placeholder="Enter your subject">
-                        <textarea rows="8" id="message" placeholder="Message..."></textarea>
-                        <div class="click">
+                <div>
+                    <a href="https://api.whatsapp.com/send/?phone=6285208696969&text&app_absent=0"><img src="../assets/contact-us/phone-icon.png"></a>
+                        <h5>0213-2012390, Tanaka Guitar</h5>
+                        <p>Monday to Sunday, 10 am to 10 pm WIB</p>
+                </div>
+                <div>
+                    <h5>Social Media</h5>
+                    <div class="social-row">
+                        <a href="https://facebook.com"><img src="../assets/footer/social-media/facebook.png"></a>
+                        <a href="https://youtube.com"><img src="../assets/footer/social-media/youtube.png"></a>
+                        <a href="https://instagram.com"><img src="../assets/footer/social-media/instagram.png"></a>
+                        <a href="https://twitter.com"><img src="../assets/footer/social-media/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form method="POST">
+                    <input type="text" id="username" placeholder="Enter your name (min. 2 characters)">
+                    <div id="errorUser" class="color-red"></div>
+                    <input type="text" id="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
+                    <div id="errorPhone" class="color-red"></div>
+                    <input type="email" id="email" placeholder="Enter your email address (format: address@gmail.com)">
+                    <div id="errorEmail" class="color-red"></div>
+                    <input type="text" id="subject" placeholder="Enter your subject">
+                    <div id="errorSubject" class="color-red"></div>
+                    <textarea rows="8" id="message" placeholder="Message..."></textarea>
+                    <div id="errorMessage" class="color-red"></div>
+                    <div class="click">
                         <button type="button" class="send-button" onclick="validateForm()">Send Message</button>
-                        </div>
-                        
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

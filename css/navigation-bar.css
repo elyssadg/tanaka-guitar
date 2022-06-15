@@ -134,12 +134,6 @@ body{
 
 @media (max-width: 1200px) {
     .nav-menu-center{
-        width: 50%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .nav-menu-center{
         width: 60%;
     }
 }
@@ -162,7 +156,7 @@ body{
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .nav-menu-center, .nav-menu-right{
         display: none;
     }
