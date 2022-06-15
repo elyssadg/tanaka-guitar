@@ -70,21 +70,27 @@ a{
     color: white;
 }
 
-@media (max-width: 800px) {
-    .home-header{
-        height: 380px;
-    }
+@media (max-width: 1200px) {
     .header-text{
         width: 80%;
-        height: 75%;
     }
+}
+
+@media (max-width: 900px) {
+    .home-header{
+        margin-top: 65.5px;
+        height: 380px;
+    }
+
     .header-text h1{
         font-size: 40px;
         letter-spacing: 2px;
     }
+
     .header-text p{
         font-size: 15px;
     }
+    
     .header-text a button{
         margin-top: 40px;
         font-size: 16px;
@@ -92,6 +98,44 @@ a{
         border-width: 2px;
     }
 }
+
+@media (max-width: 500px) {
+    .home-header{
+        height: 300px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    .header-text p{
+        font-size: 12px;
+    }
+
+    .header-text a button{
+        margin-top: 30px;
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-text h1{
+        font-size: 25px;
+    }
+
+    .header-text p{
+        font-size: 10.5px;
+    }
+    
+    .header-text a button{
+        margin-top: 30px;
+        font-size: 12px;
+        padding: 3px 10px;
+        border-width: 2px;
+    }
+}
+
 
 .container{
     margin: 80px auto;
@@ -107,7 +151,7 @@ a{
     letter-spacing: 0.5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     .container{
         margin: 60px auto;
         width: 80%;
@@ -137,9 +181,22 @@ a{
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 1000px) {
     .row-best-sellers{
         justify-content: center;
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .row-best-sellers{
+        gap: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .row-best-sellers{
+        gap: 40px;
     }
 }
 
@@ -353,12 +410,15 @@ a{
     .slide img{
         border-radius: 10px;
     }
+
     .prev-btn img, .next-btn img{
         width: 25px; height: 25px;
     }
+
     .prev-btn{
         left: 15px;
     }
+
     .next-btn{
         right: 15px;
     }
@@ -498,8 +558,4 @@ a{
     .row-brands{
         justify-content: space-evenly;
     }
-}
-
-@media (max-width: 800px) {
-    
 }

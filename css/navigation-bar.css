@@ -12,6 +12,65 @@ body{
     z-index: 1;
 }
 
+#sidebar{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #EA7B14;
+    overflow-x: hidden;
+    transition: all 300ms ease-out 0s;
+    z-index: 2;
+}
+
+#sidebar a{
+    display: block;
+    padding: 20px 0;
+    margin: 0 30px;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 300ms ease-out 0s;
+}
+
+#sidebar a:hover{
+    color: white;
+}
+
+#sidebar .close-btn{
+    border: none;
+    margin: 10px 20px 0 0;
+    height: 50px;
+    text-align: right;
+    font-size: 45px;
+}
+
+#side-bar .active-sidebar{
+    color: white;
+}
+
+.open-sidebar{
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    transition: all 300ms ease-out 0s;
+    cursor: pointer;
+}
+
+.open-sidebar:hover {
+    color: #EA7B14;
+}
+
+#hamburger {
+    display: none;
+    transition: margin-left 300ms ease-out;
+}
+
 .navbar{
     padding: 12px 5%;
     display: flex;
@@ -28,16 +87,14 @@ body{
 }
 
 .nav-menu-center{
-    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .nav-menu-center li{
     display: inline-block;
     list-style: none;
-}
-
-.nav-menu-center li:not(:last-child){
-    margin-right: 10%;
 }
 
 .nav-menu-center li a{
@@ -53,15 +110,13 @@ body{
 }
 
 .nav-menu-right{
-    float: right;
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-menu-right img{
     width: 35px; height: 35px;
-}
-
-.nav-menu-right a:not(:last-child){
-    margin-right: 30px;
 }
 
 .nav-menu-center .active a{
@@ -75,4 +130,44 @@ body{
     width: 100%;
     height: 2px;
     background: #EA7B14;
+}
+
+@media (max-width: 1200px) {
+    .nav-menu-center{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav-menu-center{
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .logo img{
+        height: 40px;
+    }
+
+    .nav-menu-center li a{
+        font-size: 14px;
+    }
+
+    .nav-menu-right img{
+        width: 25px; height: 25px;
+    }
+
+    .navbar{
+        padding: 8px 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-menu-center, .nav-menu-right{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
 }
