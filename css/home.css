@@ -393,6 +393,7 @@ a{
 
 /* -- Brands Circle -- */
 .col-brands{
+    box-sizing: content-box;
     padding: 53px 18px;
     width: 184px;
     height: 111px;
