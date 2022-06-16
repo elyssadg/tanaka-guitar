@@ -20,36 +20,37 @@
     <script defer src="../script/footer.js"></script>
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <div class="navbar">
-                <a href="#" class="logo"><img src="../assets/navigation-bar/logo.png" alt="tanaka guitar logo"></a>
-                <ul class="nav-menu-center">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li class="active"><a href="#">About Us</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-                <div class="nav-menu-right">
-                    <a href=""><img src="../assets/navigation-bar/wishlist.png" alt="wishlist icon"></a>
-                    <a href=""><img src="../assets/navigation-bar/bag.png" alt="bag icon"></a>
-                    <a href="member.html"><img src="../assets/navigation-bar/user.png" alt="member icon"></a>
-                </div>
-                <div id="sidebar">
-                    <a href="javascript:void(0)" class="close-btn" onclick="return closeSideBar()">×</a>
-                    <a href="home.html">Home</a>
-                    <a href="gallery.html">Gallery</a>
-                    <a href="#">About Us</a>
-                    <a href="contact-us.html">Contact Us</a>
-                    <a href="#">My Wishlist</a>
-                    <a href="#">My Cart</a>
-                    <a href="member.html">Join Us</a>
-                </div>
-                <div id="hamburger">
-                    <button class="open-sidebar" onclick="return openSideBar()">☰</button>
-                </div>
-            </div>
+    <nav>
+        <a href="home.html" class="logo"><img src="../assets/navigation-bar/logo.png" alt="tanaka guitar logo"></a>
+        <ul class="nav-menu-center">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#categories">Categories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-menu-right">
+            <a href=""><img src="../assets/navigation-bar/wishlist.png" alt="wishlist icon"></a>
+            <a href=""><img src="../assets/navigation-bar/bag.png" alt="bag icon"></a>
+            <a href="member.html"><img src="../assets/navigation-bar/user.png" alt="member icon"></a>
         </div>
+        <div id="sidebar">
+            <a href="javascript:void(0)" class="close-btn" onclick="return closeSideBar()">×</a>
+            <a href="home.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about-us.html" class="active-sidebar">About Us</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">My Cart</a>
+            <a href="member.html">Join Us</a>
+        </div>
+        <div id="hamburger">
+            <button class="open-sidebar" onclick="return openSideBar()">☰</button>
+        </div>
+    </nav>
+
+    <header>
         <div class="about-us-header">
             <div class="header-text">
                 <p>Know More About</p>
@@ -57,12 +58,14 @@
             </div>
         </div>
     </header>
+
     <section class="container">
         <h1>Our Goals</h1>
         <div class="mission">
             <h1>To Bring The Best Guitar For You</h1>
         </div>
     </section>
+
     <section class="container about-tanaka">
         <h1>About TANAKA Guitar</h1>
         <div class="our-story">
@@ -106,49 +109,49 @@
                     <input type="submit" onclick="validateSubscribeForm()" id="subscribe-btn" value="Subscribe!">
                 </form>
             </div>
-            <div class="footer-container">
-                <div class="first-col">
-                    <h1>Our Stores</h1>
-                    <ul>
-                        <li><a href="">Jakarta</a></li>
-                        <li><a href="">Yogyakarta</a></li>
-                        <li><a href="">Surabaya</a></li>
-                        <li><a href="">Denpasar</a></li>
-                        <li><a href="">Pontianak</a></li>
-                    </ul>
+        </div>
+        <div class="footer-container">
+            <div class="first-col">
+                <h1>Our Stores</h1>
+                <ul>
+                    <li><a href="">Jakarta</a></li>
+                    <li><a href="">Yogyakarta</a></li>
+                    <li><a href="">Surabaya</a></li>
+                    <li><a href="">Denpasar</a></li>
+                    <li><a href="">Pontianak</a></li>
+                </ul>
+            </div>
+            <div class="second-col">
+                <h1>Informations</h1>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Track My Order</a></li>
+                    <li><a href="member.html">Membership</a></li>
+                    <li><a href="">Terms & Condition</a></li>
+                </ul>
+            </div>
+            <div class="third-col">
+                <div class="contact">
+                    <h1>Contact Us</h1>
+                    <h2>0213-2012390</h2>
+                    <p>tanaka.guitar@tanaka.com</p>
                 </div>
-                <div class="second-col">
-                    <h1>Informations</h1>
-                    <ul>
-                        <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Track My Order</a></li>
-                        <li><a href="member.html">Membership</a></li>
-                        <li><a href="">Terms & Condition</a></li>
-                    </ul>
-                </div>
-                <div class="third-col">
-                    <div class="contact">
-                        <h1>Contact Us</h1>
-                        <h2>0213-2012390</h2>
-                        <p>tanaka.guitar@tanaka.com</p>
-                    </div>
-                    <div class="social-media">
-                        <h1>Follow Us</h1>
-                        <div class="social-img">
-                            <a href="https://facebook.com/"><img src="../assets/footer/social-media/facebook.png" alt=""></a>
-                            <a href="https://youtube.com/"><img src="../assets/footer/social-media/youtube.png" alt=""></a>
-                            <a href="https://twitter.com/"><img src="../assets/footer/social-media/twitter.png" alt=""></a>
-                            <a href="https://instagram.com/"><img src="../assets/footer/social-media/instagram.png" alt=""></a>
-                        </div>
+                <div class="social-media">
+                    <h1>Follow Us</h1>
+                    <div class="social-img">
+                        <a href="https://facebook.com/"><img src="../assets/footer/social-media/facebook.png" alt=""></a>
+                        <a href="https://youtube.com/"><img src="../assets/footer/social-media/youtube.png" alt=""></a>
+                        <a href="https://twitter.com/"><img src="../assets/footer/social-media/twitter.png" alt=""></a>
+                        <a href="https://instagram.com/"><img src="../assets/footer/social-media/instagram.png" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="credit">
-                &copy; 2022 Tanaka Guitar All Right Reserved
-                <br>
-                Developed by Elyssa Davina Giovanni n' Guido William
-            </div>
+        </div>
+        <div class="credit">
+            &copy; 2022 Tanaka Guitar All Right Reserved
+            <br>
+            Developed by Elyssa Davina Giovanni n' Guido William
         </div>
     </footer>
 </body>
