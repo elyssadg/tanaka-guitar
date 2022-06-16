@@ -325,6 +325,9 @@ a{
 }
 
 @media(max-width: 800px){
+    html,body{
+        overflow-x: hidden;
+    }
     .container h1{
         font-size: 28px;
     }
@@ -336,6 +339,7 @@ a{
 
     .header-text h1{
         font-size: 80px;
+        line-height: 80px;
     }
 
     .header-text p{
@@ -384,12 +388,18 @@ a{
 }
 
 @media (max-width: 550px){
+    html,body{
+        overflow-x: hidden;
+    }
     .container h1{
         font-size: 24px;
     }
 }
 
 @media (max-width: 420px) {
+    html,body{
+        overflow-x: hidden;
+    }
     .container{
         margin: 60px auto;
     }

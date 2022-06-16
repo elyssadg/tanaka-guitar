@@ -5,7 +5,6 @@ let email = document.getElementById("email");
 let gender = document.getElementById("gender");
 let agree = document.getElementById("terms-condition");
 
-<<<<<<< Updated upstream
 rform.addEventListener('submit',(event)=>{
     event.preventDefault();
     validateMemberForm();
@@ -19,14 +18,6 @@ function validateMemberForm(){
     } else {
         errorFirst.innerHTML = "";
         count += 1;
-=======
-function validateForm(){
-    alert("buton work");
-    if(first.value.length==0){
-        errorFirst.innerHTML = "First name can't be empty"
-    }else{
-        errorFirst.innerHTML = ""
->>>>>>> Stashed changes
     }
     if (last.value.length == 0){
         errorLast.innerHTML = "Last name can't be empty";
