@@ -218,6 +218,9 @@ a{
         background-position: center;
         background-size: cover;
     }
+    .about-tanaka a button{
+        transform: scale(0.9);
+    }
 }
 
 @media (max-width: 550px){
@@ -233,6 +236,38 @@ a{
 
     .container h1{
         padding-bottom: 30px;
+    }
+
+    .container h2{
+        font-size: 20px;
+    }
+
+    .our-story p, .why-tanaka p, .expect p{
+        font-size: 12px;
+    }
+
+    .why-tanaka h2{
+        margin-bottom: 20px;
+    }
+
+    .expect img{
+        padding: 20px 0;
+    }
+
+    .story-row{
+        margin: 20px 0;
+    }
+
+    .our-story, .expect, .why-tanaka {
+        padding: 20px 0;
+    }
+
+    .our-story{
+        padding-top: 0;
+    }
+
+    .why-tanaka{
+        padding-bottom: 0;
     }
 
     .story-row{
@@ -258,5 +293,8 @@ a{
     }
     .header-text p{
         font-size:40px;
+    }
+    .about-tanaka a button{
+        transform: scale(0.9);
     }
 }

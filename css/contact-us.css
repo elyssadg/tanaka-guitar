@@ -179,17 +179,10 @@ a{
     position: relative;
 }
 
-.jakarta{grid-area: jakarta;}
-.yogyakarta{grid-area: yogyakarta;}
-.surabaya{grid-area: surabaya;}
-.denpasar{grid-area: denpasar;}
-.pontianak{grid-area: pontianak;}
-
 .store{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    grid-template-areas: 'jakarta yogyakarta surabaya''jakarta denpasar pontianak ';
     justify-content: center;
     margin-top: 60px;
     gap: 60px;
@@ -297,6 +290,9 @@ a{
 
 @media (max-width: 1000px) {
     .contact-us-header{
+        height: 600px;
+    }
+    .contact-us-header{
         margin-top: 70px;
     }
 }
@@ -348,6 +344,27 @@ a{
     }
     .contact-col input, .contact-col textarea{
         width: 100%;
+    }
+}
+
+@media (max-width: 1420px) {
+    .store{
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-col:nth-of-type(2) {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header-text p{
+        font-size: 40px;
+    }
+    .contact-col:nth-of-type(1) {
+        flex-basis: 30%;
     }
 }
 
