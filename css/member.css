@@ -59,6 +59,10 @@ a{
     letter-spacing: 0.5px;
 }
 
+.benefit h1{
+    margin-bottom: 40px;
+}
+
 .join-form h1{
     margin-bottom: 20px;
 }
@@ -195,10 +199,6 @@ a{
     color: white;
 }
 
-.benefit h1{
-    margin-bottom: 40px;
-}
-
 .benefit-container{
     display: flex;
     flex-wrap: wrap;
@@ -252,20 +252,38 @@ a{
         font-size: 35px;
     }
 }
+
 @media (max-width: 610px){
     .input-box input::placeholder{
-    font-size: 11px;
-}
-    .container h1{
-        font-size: 20px;
+        font-size: 13px;
+    }
+    
+    .benefit-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .item{
+        width: 50%;
+    }
+    
+    .item img{
+        width: 100%;
     }
 }
+
 @media (max-width: 550px){
     .input-box input::placeholder{
-        font-size: 10px;
+        font-size: 12px;
     }
-    .container h1{
-        font-size: 20px;
+
+    .item{
+        width: 60%;
+    }
+
+    .benefit h1{
+        margin-bottom: 30px;
     }
 }
 
@@ -279,5 +297,9 @@ a{
 
     .container h1{
         padding-bottom: 30px;
+    }
+
+    .benefit h1{
+        margin-bottom: 0px;
     }
 }
