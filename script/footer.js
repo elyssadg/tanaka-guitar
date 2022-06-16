@@ -3,6 +3,11 @@ let email = document.getElementById("email");
 let nameError = document.getElementById("name-error-message");
 let emailError = document.getElementById("email-error-message");
 
+rform.addEventListener('submit', (event) => {
+    event.preventDefault();
+    validateSubscribeForm();
+});
+
 function validateSubscribeForm(){
     var result = true
 

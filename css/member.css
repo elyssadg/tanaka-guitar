@@ -11,6 +11,7 @@ a{
 }
 
 .member-header{
+    margin-top: 80px;
     position: relative;
     width: 100%;
     height: 626px;
@@ -220,7 +221,16 @@ a{
     text-align: justify;
 }
 
+@media (max-width: 1000px) {
+    .member-header{
+        margin-top: 70px;
+    }
+}
+
 @media (max-width:800px) {
+    .container h1{
+        font-size: 28px;
+    }
     .col-form-img{
         display: none;
     }
@@ -246,5 +256,21 @@ a{
     }
     .member-header p{
         font-size: 35px;
+    }
+}
+
+@media (max-width: 550px){
+    .container h1{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container{
+        margin: 60px auto;
+    }
+
+    .container h1{
+        padding-bottom: 30px;
     }
 }
