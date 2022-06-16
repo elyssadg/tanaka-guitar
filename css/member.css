@@ -219,33 +219,35 @@ a{
     }
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .container h1{
         font-size: 28px;
-        width: 100%;
-        height: auto;
     }
+
     .col-form-img{
         display: none;
     }
+
     .join-content{
         position: relative;
-        
     }
+
     .col-form{
         width: 1000px;
     }
+
     .member-header{
-        margin-top: 70px;
         position: relative;
         width: 100%;
         background-position: center;
         background-size: cover;
     }
+
     .member-header h1{
         font-size: 50px;
         letter-spacing: 2px;
     }
+
     .member-header p{
         font-size: 35px;
     }

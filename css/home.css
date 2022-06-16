@@ -289,37 +289,6 @@ a{
     margin-left: -40%;
 }
 
-.prev-btn, .next-btn{
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-}
-
-.prev-btn{
-    left: 35px;
-}
-
-.prev-btn img{
-    transform: rotate(180);
-}
-
-.next-btn{
-    right: 35px;
-}
-
-.prev-btn img, .next-btn img{
-    width: 40px; height: 40px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    transition: all 300ms ease-out 0s;
-}
-
-.prev-btn:hover img, .next-btn:hover img{
-    background: white;
-}
-
 /* -- Categories Section -- */
 
 /* -- Categories Row -- */
@@ -472,16 +441,6 @@ a{
     }
 }
 
-@media (max-width: 1000px) {
-    .home-header{
-        margin-top: 70px;
-    }
-
-    .header-text{
-        height: 72%;
-    }
-}
-
 @media (max-width: 1030px) {
     .row-best-sellers{
         gap: 40px;
@@ -491,6 +450,21 @@ a{
         gap: 40px 80px;
     }
 }
+
+@media (max-width: 1000px) {
+    .home-header{
+        margin-top: 70px;
+    }
+
+    .header-text{
+        height: 72%;
+    }
+
+    .manual-btn{
+        padding: 6px;
+    }
+}
+
 
 @media (max-width: 970px) {
     .row-best-sellers{
@@ -632,6 +606,10 @@ a{
     .row-best-sellers{
         gap: 40px 20px;
     }
+
+    .manual-btn{
+        padding: 4.5px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -642,9 +620,7 @@ a{
     .row-brands{
         gap: 30px;
     }
-}
 
-@media (max-width: 550px){
     .home-header{
         height: 432px;
     }
@@ -777,6 +753,10 @@ a{
     .col-categories, .col-brands{
         transform: scale(0.9);
     }
+
+    .manual-btn{
+        padding: 3.5px;
+    }
 }
 
 @media (max-width: 300px) {
@@ -798,54 +778,3 @@ a{
         transform: scale(0.9);
     }
 }
-
-/* .slider {
-    width: 1200px;
-    height: 500px;
-    background-color: yellow;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    text-align: center;
-    overflow: hidden;
-  }
-  .image-container {
-    width: 3600px;
-    background-color: pink;
-    height: 500px;
-    clear: both;
-    position: relative;
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
-  }
-  .content img{
-    width: 1200;
-  }
-  .slide {
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-  }
-  #slide-1:target ~ .image-container {
-    left: 0px;
-  }
-  #slide-2:target ~ .image-container {
-    left: -1200px;
-  }
-  #slide-3:target ~ .image-container {
-    left: -2400px;
-  }
-  .buttons {
-    position: relative;
-    top: -20px;
-  }
-  .buttons a {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 50px;
-    background-color: rgb(171, 81, 32);
-  } */

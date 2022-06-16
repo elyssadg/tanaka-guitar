@@ -2,11 +2,6 @@ var counter = 1;
 var flag = false;
 var currentRadio;
 
-function moveSlides(n) {
-    if (slide)
-}
-
-
 function radioClicked(current, newRadio){
     $(current).css("background", "")
     $(newRadio).css("background", "rgb(121, 46, 0)")
@@ -14,7 +9,7 @@ function radioClicked(current, newRadio){
 }
 
 $(function(){
-    radioClicked(currentRadio, '#manual-btn-1');
+    radioClicked(currentRadio, "#manual-btn-1");
 
     $('#radio-1').click(function(){
         counter = 1;
@@ -76,12 +71,12 @@ $(function(){
 
 var interval = setInterval(function(){
     if (!flag){
-        counter+=1;
+        counter += 1;
         if(counter > 3){
             counter = 1;
         }
-        buttonClick(currBtn, '#manual-btn' + counter);
-        document.getElementById('radio' + counter).checked = true;
+        buttonClick(currBtn, '#manual-btn-' + counter);
+        document.getElementById('radio-' + counter).checked = true;
         console.log(counter)
     }
 }, 5000);
