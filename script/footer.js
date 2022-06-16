@@ -9,21 +9,23 @@ rform.addEventListener('submit', (event) => {
 });
 
 function validateSubscribeForm(){
-    var result = true
+    var count = 0;
 
     if (username.value.length < 2){
         nameError.innerHTML = "Username is shorter than 2 characters"
-        result = false
     } else {
         nameError.innerHTML = ""
+        count += 1;
     }
 
     if (email.value.endsWith("@gmail.com") == false) {
         emailError.innerHTML = "Email must end with @gmail.com"
-        result = false
     } else {
         emailError.innerHTML = ""
+        count += 1;
     }
 
-    return result
+    if (count == 2){
+        location.href = "../html/home.html";
+    }
 }
