@@ -206,23 +206,29 @@
 
     <section class="container slider-whats-on">
         <h1>What's On</h1>
-        <section class="slider">
-            <span id="slide-1"></span>
-            <span id="slide-2"></span>
-            <span id="slide-3"></span>
-            <div class="image-container">
-                <div class="content">
-                    <img src="../assets/home/whats-on-slider/slidercombine.png" class="slide" width="3600" height="500"/>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio-1">
+                <input type="radio" name="radio-btn" id="radio-2">
+                <input type="radio" name="radio-btn" id="radio-3">
+                <div class="slide first">
+                    <img src="../assets/home/whats-on-slider/slide-1.png" alt="promo 1">
+                </div>
+                <div class="slide">
+                    <img src="../assets/home/whats-on-slider/slide-2.png" alt="promo 2">
+                </div>
+                <div class="slide">
+                    <img src="../assets/home/whats-on-slider/slide-3.png" alt="promo 3">
                 </div>
             </div>
-          <div class="buttons">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-          </div>
-        </section>
-        <a class="prev-btn" onclick="moveSlides(-1)"><img src="../assets/home/whats-on-slider/prev-btn.png" alt="prev"></a>
-        <a class="next-btn" onclick="moveSlides(1)"><img src="../assets/home/whats-on-slider/next-btn.png" alt="next"></a>
+        </div>
+        <button class="prev-btn"><img src="../assets/home/whats-on-slider/prev-btn.png" alt="prev"></button>
+        <button class="next-btn"><img src="../assets/home/whats-on-slider/next-btn.png" alt="next"></button>
+        <div class="manual-navigation">
+            <label for="radio-1" class="manual-btn" id="manual-btn-1"></label>
+            <label for="radio-2" class="manual-btn" id="manual-btn-2"></label>
+            <label for="radio-3" class="manual-btn" id="manual-btn-3"></label>
+        </div>
     </section>
 
     <section class="container" id="categories">
