@@ -1,7 +1,7 @@
-let username = document.getElementById("username");
+let username = document.getElementById("name");
 let email = document.getElementById("email");
-let errorUser = document.getElementById("errorUser");
-let errorEmail = document.getElementById("errorEmail");
+let nameError = document.getElementById("name-error-message");
+let emailError = document.getElementById("email-error-message");
 
 rform.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,17 +11,21 @@ rform.addEventListener('submit', (event) => {
 function validateSubscribeForm(){
     var count = 0;
 
-    if (username.value.length < 2){
-        nameError.innerHTML = "Username is shorter than 2 characters"
+    if (username.value.length == 0){
+        nameError.innerHTML = "Name can't be empty";
+    } else if (username.value.length < 2){
+        nameError.innerHTML = "Name is shorter than 2 characters";
     } else {
-        nameError.innerHTML = ""
+        nameError.innerHTML = "";
         count += 1;
     }
 
-    if (email.value.endsWith("@gmail.com") == false) {
-        emailError.innerHTML = "Email must end with @gmail.com"
+    if (email.value.length == 0){
+        emailError.innerHTML = "Email can't be empty";
+    } else if (email.value.endsWith("@gmail.com") == false){
+        emailError.innerHTML = "Email must end with @gmail.com";
     } else {
-        emailError.innerHTML = ""
+        emailError.innerHTML = "";
         count += 1;
     }
 

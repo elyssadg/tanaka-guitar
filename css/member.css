@@ -86,6 +86,7 @@ a{
 
 .col-form{
     width: 72%;
+    position: relative;
 }
 
 .first-line{
@@ -143,6 +144,10 @@ a{
 }
 
 .click button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 90px;
     width: 172px;
     height: 37px;

@@ -347,7 +347,7 @@ a{
     }
 
     .row{
-        flex-direction: column;
+        display: block;
     }
 
     .contact-col{

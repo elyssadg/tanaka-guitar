@@ -41,18 +41,14 @@
     border: 0.5px solid #792E00;
     padding-left: 40px;
 }
-.color-red{
-    color: red;
-    font-size: 12px;
-    margin-left: 20px;
-}
+
 ::placeholder{
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
 }
 
 #subscribe-btn{
-    padding: 0;
+    margin-top: 40px;
     width: 13%;
     height: 50px;
     border: 2px solid rgb(234, 123, 20);
@@ -74,7 +70,7 @@
 
 #name-error-message, #email-error-message{
     margin-top: 5px;
-    color: white;
+    color: rgb(255, 196, 196);
     font-size: 12px;
 }
 

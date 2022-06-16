@@ -25,15 +25,14 @@
         <a href="home.html" class="logo"><img src="../assets/navigation-bar/logo.png" alt="tanaka guitar logo"></a>
         <ul class="nav-menu-center">
             <li><a href="home.html">Home</a></li>
-            <li><a href="home.html#categories">Categories</a></li>
             <li class="active"><a href="#">Gallery</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
         <div class="nav-menu-right">
-            <a href=""><img src="../assets/navigation-bar/wishlist.png" alt="wishlist icon"></a>
-            <a href=""><img src="../assets/navigation-bar/bag.png" alt="bag icon"></a>
-            <a href="member.html"><img src="../assets/navigation-bar/user-active.png" alt="member icon"></a>
+            <a href="" class="wishlist-icon"></a>
+            <a href="" class="cart-icon"></a>
+            <a href="member.html" class="member-icon"></a>
         </div>
         <div id="sidebar">
             <a href="javascript:void(0)" class="close-btn" onclick="return closeSideBar()">×</a>
@@ -489,7 +488,7 @@
                     <div id="name-error-message"></div>
                     <input type="text" id="email" placeholder="Enter your email (format: address@gmail.com)"><br>
                     <div id="email-error-message"></div>
-                    <input type="submit" onclick="validateSubscribeForm()" id="subscribe-btn" value="Subscribe!">
+                    <button type="button" onclick="validateSubscribeForm()" id="subscribe-btn">Subscribe!</button>
                 </form>
             </div>
         </div>

@@ -64,8 +64,54 @@ nav .sticky{
     justify-content: space-between;
 }
 
-.nav-menu-right img{
+.member-icon, .wishlist-icon, .cart-icon{
     width: 35px; height: 35px;
+}
+
+.member-icon{
+    background: url("../assets/navigation-bar/user.png");
+    background-position: center;
+    background-size: cover;
+    transition: all 300ms ease 0s;
+}
+
+.member-icon:hover{
+    background: url("../assets/navigation-bar/user-active.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.wishlist-icon{
+    background: url("../assets/navigation-bar/wishlist.png");
+    background-position: center;
+    background-size: cover;
+    transition: all 300ms ease 0s;
+}
+
+.wishlist-icon:hover{
+    background: url("../assets/navigation-bar/wishlist-active.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.cart-icon{
+    background: url("../assets/navigation-bar/bag.png");
+    background-position: center;
+    background-size: cover;
+    transition: all 300ms ease 0s;
+}
+
+.cart-icon:hover{
+    background: url("../assets/navigation-bar/bag-active.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.member-active{
+    background: url("../assets/navigation-bar/user-active.png");
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nav-menu-center .active a{
@@ -163,7 +209,7 @@ nav .sticky{
         font-size: 14px;
     }
 
-    .nav-menu-right img{
+    .member-icon, .cart-icon, .wishlist-icon{
         width: 27px; height: 27px;
     }
 }

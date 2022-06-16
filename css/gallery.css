@@ -33,6 +33,7 @@ a{
 
 .gallery-header img{
     width: 100%;
+    height: auto;
 }
 
 /* -- Category Bar */
@@ -264,7 +265,17 @@ a{
     }
 }
 
+@media (max-width: 1030px) {
+    .row-guitar-gallery{
+        gap: 40px;
+    }
+}
+
 @media (max-width: 1000px) {
+    .gallery-header{
+        margin-top: 70px;
+    }
+
     .category-bar{
         display: block;
     }
@@ -279,10 +290,6 @@ a{
 
     .categories a{
         padding: 2px 0;
-    }
-
-    .gallery-header{
-        margin-top: 70px;
     }
 }
 
@@ -302,12 +309,6 @@ a{
 
     .categories a{
         width: 18%;
-    }
-}
-
-@media (max-width: 1030px) {
-    .row-guitar-gallery{
-        gap: 40px;
     }
 }
 
@@ -384,17 +385,18 @@ a{
         padding-bottom: 30px;
     }
 
-    .col-guitar-gallery{
-        transform: scale(0.9);
-    }
-
     .category-bar h1{
+        font-size: 18px;
         padding-bottom: 20px;
     }
 
     .category-bar{
         margin: 20px auto;
         gap: 5px;
+    }
+
+    .col-guitar-gallery{
+        transform: scale(0.9);
     }
 
     .categories a{
