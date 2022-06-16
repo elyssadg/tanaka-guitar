@@ -18,7 +18,6 @@ a{
 
 /* -- Home Header -- */
 .home-header{
-    margin-top: 83px;
     position: relative;
     width: 100%;
     height: 626px;
@@ -454,10 +453,6 @@ a{
 }
 
 @media (max-width: 1000px) {
-    .home-header{
-        margin-top: 50px;
-    }
-
     .header-text{
         transform: translate(-50%, -58%);
     }
