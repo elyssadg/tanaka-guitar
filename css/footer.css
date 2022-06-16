@@ -41,7 +41,11 @@
     border: 0.5px solid #792E00;
     padding-left: 40px;
 }
-
+.color-red{
+    color: red;
+    font-size: 12px;
+    margin-left: 20px;
+}
 ::placeholder{
     color: rgba(0, 0, 0, 0.4);
     font-weight: 400;
