@@ -152,6 +152,7 @@ a{
     height: 100%;
     padding: 40px 0;
 }
+
 .about-tanaka h1{
     text-align: center;
 }
@@ -181,10 +182,6 @@ a{
     }
     .mission h1{
         font-size: 50px;
-    }
-    .expect img{
-        width: 750px;
-        height: auto;
     }
     .header-text h1{
         font-family: 'Lalezar', cursive;

@@ -25,7 +25,7 @@
 .subscribe-form input{
     margin: 0 90px;
     outline: none;
-    width: 700px;
+    width: 48%;
     height: 50px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
