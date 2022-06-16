@@ -32,7 +32,7 @@
         <div class="nav-menu-right">
             <a href=""><img src="../assets/navigation-bar/wishlist.png" alt="wishlist icon"></a>
             <a href=""><img src="../assets/navigation-bar/bag.png" alt="bag icon"></a>
-            <a href="member.html"><img src="../assets/navigation-bar/user.png" alt="member icon"></a>
+            <a href="member.html"><img src="../assets/navigation-bar/user-active.png" alt="member icon"></a>
         </div>
         <div id="sidebar">
             <a href="javascript:void(0)" class="close-btn" onclick="return closeSideBar()">×</a>
@@ -154,12 +154,23 @@
         <div class="subscribe-form">
             <form method="POST">
                 <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+<<<<<<< Updated upstream
                 <input type="text" id="name" placeholder="Enter your name (min. 2 characters)">
                 <div id="name-error-message"></div>
                 <input type="text" id="email" placeholder="Enter your email (format: address@gmail.com)"><br>
                 <div id="email-error-message"></div>
                 <input type="submit" onclick="validateSubscribeForm()" id="subscribe-btn" value="Subscribe!">
             </form>
+=======
+                <form method="POST">
+                    <input type="text" id="name" placeholder="Enter your name (min. 2 characters)">
+                    <div id="name-error-message"></div>
+                    <input type="text" id="email" placeholder="Enter your email (format: address@gmail.com)"><br>
+                    <div id="email-error-message"></div>
+                    <input type="submit" onsubmit="validateSubscribeForm()" id="subscribe-btn" value="Subscribe!">
+                </form>
+            </div>
+>>>>>>> Stashed changes
         </div>
     </div>
     <div class="footer-container">
