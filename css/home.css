@@ -273,7 +273,7 @@ a{
     margin-right: 5%;
 }
 
-.manual-btn:hover {
+.manual-btn:hover, #manual-btn-1 {
     background: rgb(121, 46, 0);
 }
 

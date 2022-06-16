@@ -1,82 +1,17 @@
-var counter = 1;
-var flag = false;
-var currentRadio;
-
-function radioClicked(current, newRadio){
-    $(current).css("background", "")
-    $(newRadio).css("background", "rgb(121, 46, 0)")
-    currentRadio = $(newRadio);
+function firstRadioClicked(){
+    document.getElementById("manual-btn-1").style.background = "rgb(121, 46, 0)";
+    document.getElementById("manual-btn-2").style.background = "white";
+    document.getElementById("manual-btn-3").style.background = "white";
 }
 
-$(function(){
-    radioClicked(currentRadio, "#manual-btn-1");
+function secondRadioClicked(){
+    document.getElementById("manual-btn-1").style.background = "white";
+    document.getElementById("manual-btn-2").style.background = "rgb(121, 46, 0)";
+    document.getElementById("manual-btn-3").style.background = "white";
+}
 
-    $('#radio-1').click(function(){
-        counter = 1;
-        flag = true;
-        setTimeout(function(){
-            flag = false; 
-        }, 5000)
-        radioClicked(currentRadio, '#manual-btn-1');
-    })
-
-    $('#radio-2').click(function(){
-        counter = 2;
-        flag = true;
-        setTimeout(function(){
-            flag = false; 
-        }, 5000)
-        radioClicked(currentRadio, '#manual-btn-2');
-    })
-
-    $('#radio-3').click(function(){
-        counter = 3;
-        flag = true;
-        setTimeout(function(){
-            flag = false; 
-        }, 5000)
-        radioClicked(currentRadio, '#manual-btn-3');
-    })
-
-    document.getElementById('radio-' + counter).checked = true;
-
-    $('.next-btn').click(function(){
-        flag = true;
-        counter += 1;
-        if (counter > 3){
-            counter = 1;
-        }
-        radioClicked(currentRadio, '#manual-btn-' + counter);
-        document.getElementById('radio-' + counter).checked = true;
-        console.log(counter)
-        setTimeout(function(){
-            flag = false; 
-        }, 5000) 
-    });
-   
-    $('.prev-btn').click(function(){
-        flag = true;
-        counter--;
-        if (counter < 1){
-            counter = 3;
-        }
-        radioClicked(currentRadio, '#manual-btn-' + counter);
-        document.getElementById('radio-' + counter).checked = true;
-        console.log(counter)
-        setTimeout(function(){
-            flag = false; 
-        }, 5000)
-    });
-});
-
-var interval = setInterval(function(){
-    if (!flag){
-        counter += 1;
-        if(counter > 3){
-            counter = 1;
-        }
-        buttonClick(currBtn, '#manual-btn-' + counter);
-        document.getElementById('radio-' + counter).checked = true;
-        console.log(counter)
-    }
-}, 5000);
+function thirdRadioClicked(){
+    document.getElementById("manual-btn-1").style.background = "white";
+    document.getElementById("manual-btn-2").style.background = "white";
+    document.getElementById("manual-btn-3").style.background = "rgb(121, 46, 0)";
+}
