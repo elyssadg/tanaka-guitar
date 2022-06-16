@@ -1,10 +1,13 @@
 *{
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 nav{
