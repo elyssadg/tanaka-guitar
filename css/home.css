@@ -452,6 +452,10 @@ a{
 }
 
 @media (max-width: 1000px) {
+    .home-header{
+        margin-top: 70px;
+    }
+
     .header-text{
         height: 72%;
     }
@@ -467,251 +471,308 @@ a{
     }
 }
 
-/* 
-@media (max-width: 1200px) {
-    .home-header{
-        margin-top: 60px;
-        height: 550px;
+@media (max-width: 970px) {
+    .row-best-sellers{
+        gap: 60px;
     }
 
-    .header-text{
-        width: 80%;
+    .row-categories{
+        justify-content: space-between;
+        gap: 15px 20px;
     }
 
     .row-brands{
-        justify-content: space-evenly;
+        gap: 40px;
     }
 }
 
-@media (max-width: 1000px) {
-    .header-text{
-        transform: translate(-50%, -58%);
-    }
-
-    .row-best-sellers{
+@media (max-width: 880px) {
+    .row-categories{
         justify-content: center;
-        gap: 40px 20px;
-    }
-}
-
-@media (max-width: 850px) {
-    .container{
-        width: 80%;
     }
 }
 
 @media (max-width: 800px) {
     .home-header{
-        height: 500px;
+        height: 480px;
     }
 
     .header-text{
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -56%);
+        width: 90%;
     }
-    
+
     .header-text h1{
-        font-size: 50px;
-        letter-spacing: 2px;
+        font-size: 63px;
     }
 
     .header-text p{
-        font-size: 17px;
+        font-size: 19px;
     }
-    
+
     .header-text a button{
-        font-size: 18px;
-        padding: 7px 14px;
-        border-width: 2px;
+        margin-top: 50px;
+        padding: 8px 15px;
+        font-size: 22px;
     }
 
-    .row-best-sellers{
-        gap: 60px;
-    } 
-
-    .slide img{
-        border-radius: 10px;
-    }
-
-    .prev-btn img, .next-btn img{
-        width: 25px; height: 25px;
-    }
-
-    .prev-btn{
-        left: 15px;
-    }
-
-    .next-btn{
-        right: 15px;
-    }
-
-    .col-brands{
-        position: relative;
-        padding: 42.4px 14.4px;
-        width: 147.2px;
-        height: 88.8px;
-    }
-    
-    .col-brands a{
-        position: absolute;
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 11px;
-        width: 110px;
-    }
-}
-
-@media (max-width: 700px) {
-    .header-text{
-        transform: translate(-50%, -55%);
+    .container h1{
+        font-size: 28px;
     }
 
     .row-best-sellers{
         gap: 40px;
     }
-}
 
-@media (max-width: 500px) {
-    .header-text a button{
-        margin-top: 25px;
+    .slider-whats-on{
+        width: 90%;
     }
 
-    .container{
-        margin: 40px auto;
-        width: 80%;
+    .slide img{
+        border-radius: 10px;
     }
 
-    .container h1{
-        font-size: 23px;
-        padding-bottom: 30px;
-    }
-}
-
-@media (max-width: 450px) {
-    .home-header{
-        height: 450px;
+    .row-categories{
+        gap: 10px;
     }
 
-    .header-text{
-        transform: translate(-50%, -50%);
-    }
-    
-    .header-text h1{
-        font-size: 40px;
-        letter-spacing: 2px;
-    }
-
-    .header-text p{
-        font-size: 14px;
-    }
-    
-    .header-text a button{
-        margin-top: 40px;
-        font-size: 15px;
-        padding: 5px 12px;
-    }
-
-    .col-best-sellers{
-        width: 220px;
-        height: 350px;
-    }
-
-    .guitar-name{
-        font-size: 14px;
-    }
-
-    .colors{
-        padding: 9px 0;
-    }
-
-    .color-circle{
-        width: 13px; height: 13px;
-    }
-
-    .stock{
-        font-size: 9px;
-    }
-
-    .stock-no-disc{
-        font-size: 11px;
-    }
-
-    .price-before-disc{
-        text-decoration-line: line-through;
-        font-size: 10px;
-    }
-
-    .price{
-        color: #EA7B14;
-        font-size: 13px;
-        font-weight: 500;
-    }
-
-    .price-no-disc{
-        bottom: 15px;
-        font-size: 15px;
-    }
-
-    .best-sellers a button{
-        margin-top: 40px;
-        width: 140px;
-        height: 30px;
-        font-size: 12px;
-        border-radius: 30px;
-    }
-    
-    .prev-btn img, .next-btn img{
-        width: 18px; height: 18px;
-    }
-    
     .col-categories{
-        width: 300px; height: 290px;
+        width: 329px; height: 315px;
     }
     
     .col-categories h2{
-        top: 55%;
+        top: 53%;
         left: 40px;
-        width: 100px;
         font-size: 25px;
+        width: 165px;
     }
     
     .categories-rectangle{
-        width: 300px;
-        height: 200px;
+        width: 329px;
+        height: 234px;
     }
     
     .col-categories img{
-        width: auto;
-        height: 275px;
+        width: 176px;
+        height: 302px;
     }
     
     .col-categories p{
-        top: 280px;
-        width: 148px;
-        opacity: 0;
-        font-size: 12px;
-    }
-
-    .col-categories:hover h2{
-        font-size: 20px;
-        left: 28px;
-        top: 112px;
-    }
-
-    .col-categories:hover p{
-        opacity: 1;
-        top: 150px;
+        top: 207px;
+        left: 30px;
+        width: 160px;
+        font-size: 14px;
     }
     
+    .col-categories:hover h2{
+        top: 108px;
+        left: 30px;
+        font-size: 23px;
+        width: 200px;
+    }
+    
+    .col-categories:hover p{
+        opacity: 1;
+        top: 148px;
+    }
+    
+    .col-categories:hover .categories-rectangle{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .row-brands{
+        gap: 40px 60px;
+    }
+
     .col-brands{
         position: relative;
-        padding: 31.8px 10.8px;
-        width: 110px;
-        height: 66.6px;
+        box-sizing: content-box;
+        padding: 48px 16px;
+        width: 166px;
+        height: 99.9px;
     }
     
     .col-brands a{
-        bottom: 15px;
-        font-size: 10px;
+        bottom: 20px;
+        font-size: 12px;
+        font-weight: 500;
     }
-} */
+    
+    .col-brands:hover img{
+        width: 98%;
+    }
+    
+    .col-brands:hover a{
+        opacity: 1;
+    }
+}
+
+@media (max-width: 650px) {
+    .row-best-sellers{
+        gap: 40px 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header-text{
+        transform: translate(-50%, -60%);
+    }
+    .row-brands{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 550px){
+    .home-header{
+        height: 432px;
+    }
+
+    .header-text h1{
+        font-size: 57px;
+        letter-spacing: 1px;
+    }
+
+    .header-text p{
+        font-size: 17px;
+    }
+
+    .header-text a button{
+        margin-top: 40px;
+        padding: 7px 14px;
+        font-size: 19px;
+    }
+
+    .container h1{
+        font-size: 24px;
+    }
+
+    .best-sellers h1{
+        padding-bottom: 30px;
+    }
+
+    .row-best-sellers{
+        gap: 0;
+    }
+
+    .col-best-sellers{
+        transform: scale(0.9);
+    }
+
+    .best-sellers a button{
+        margin-top: 50px;
+        transform: scale(1.1);
+    }
+    
+    .col-categories{
+        width: 296px; height: 284px;
+    }
+    
+    .col-categories h2{
+        top: 50%;
+        left: 40px;
+        font-size: 23px;
+        width: 150px;
+    }
+    
+    .categories-rectangle{
+        width: 296px;
+        height: 211px;
+    }
+    
+    .col-categories img{
+        width: 158px;
+        height: 271px;
+    }
+    
+    .col-categories p{
+        top: 200px;
+        left: 30px;
+        width: 130px;
+        font-size: 12px;
+    }
+    
+    .col-categories:hover h2{
+        top: 98px;
+        left: 30px;
+        font-size: 20px;
+    }
+    
+    .col-categories:hover p{
+        top: 133px;
+    }
+    
+    .col-categories:hover .categories-rectangle{
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .col-brands{
+        padding: 43px 15px;
+        width: 149px;
+        height: 90px;
+    }
+    
+    .col-brands a{
+        bottom: 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 420px) {
+    .home-header{
+        height: 389px;
+    }
+
+    .header-text h1{
+        font-size: 38px;
+    }
+
+    .header-text p{
+        font-size: 15px;
+    }
+
+    .header-text a button{
+        margin-top: 30px;
+        padding: 6px 13px;
+        font-size: 17px;
+    }
+
+    .container{
+        margin: 60px auto;
+    }
+
+    .container h1{
+        padding-bottom: 30px;
+    }
+
+    .row-categories{
+        gap: 0;
+    }
+
+    .row-brands{
+        gap: 5px;
+    }
+
+    .col-categories, .col-brands{
+        transform: scale(0.9);
+    }
+}
+
+@media (max-width: 300px) {
+    .header-text p{
+        font-size: 14px;
+    }
+
+    .col-best-sellers, .col-brands{
+        transform: scale(0.9);
+    }
+
+    .col-categories{
+        transform: scale(0.8);
+        height: 280px;
+    }
+
+    .best-sellers a button{
+        margin-top: 30px;
+        transform: scale(0.9);
+    }
+}
