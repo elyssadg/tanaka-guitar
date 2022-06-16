@@ -107,6 +107,7 @@ a{
     height: 35px;
 }
 
+
 .contact-col h5{
     font-size: 24px;
     margin: 5px 0;
@@ -115,12 +116,12 @@ a{
 }
 
 .contact-col{
-    flex-basis: 40%;
+    width: 40%;
     padding-bottom: 10px;
 }
 
-.contact-col:nth-of-type(2){
-    flex-basis: 60%;
+.row .contact-col:nth-child(2){
+    width: 60%;
 }
 
 .contact-col p{
@@ -294,18 +295,9 @@ a{
     }
 }
 
-@media (max-width: 1200px) {
-    .contact-col:nth-of-type(2) {
-        flex-basis: 50%;
-    }
-}
-
 @media (max-width: 1100px) {
     .header-text p{
         font-size: 40px;
-    }
-    .contact-col:nth-of-type(1) {
-        flex-basis: 30%;
     }
 }
 
@@ -316,6 +308,12 @@ a{
     .contact-us-header{
         margin-top: 70px;
     }
+    .contact-col{
+        width: 40%;
+    }
+    .row .contact-col:nth-child(2) {
+        width: 50%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -325,9 +323,6 @@ a{
 }
 
 @media(max-width: 800px){
-    html,body{
-        overflow-x: hidden;
-    }
     .container h1{
         font-size: 28px;
     }
@@ -347,20 +342,22 @@ a{
     }
 
     .store{
-        gap: 40px;
+        gap: 30px;
     }
 
     .row{
         display: block;
+        overflow: hidden;
     }
 
-    .contact-col{
+    .contact-col, .row .contact-col:nth-child(2){
         margin-top: 30px;
+        width: 100%;
     }
 
     .contact-col h5, .contact-col p{
        transform: translateX(60px);
-    }
+    } 
 
     .contact-col h5{
         font-size: 20px;
@@ -379,7 +376,7 @@ a{
 
     .social-row img{
         position: relative;
-        transform: translateX(70px);
+        left: 60px;
     }
 
     .contact-col input, .contact-col textarea{
@@ -388,23 +385,59 @@ a{
 }
 
 @media (max-width: 550px){
-    html,body{
-        overflow-x: hidden;
+    .contact-us-header{
+        height: 380px;
     }
+
+    .header-text{
+        transform: translate(-50%, -40%);
+    }
+
+    .header-text h1{
+        font-size: 60px;
+    }
+
+    .header-text p{
+        font-size: 30px;
+    }
+
     .container h1{
         font-size: 24px;
+    }
+
+    .store{
+        gap: 10px;
+    }
+
+    .contact-col h5, .contact-col p {
+        transform: translateX(40px);
+    }
+
+    .store-box{
+        transform: scale(0.9);
+    }
+
+    .contact-col a img{
+        width: 28px;
+        height: 28px;
     }
 }
 
 @media (max-width: 420px) {
-    html,body{
-        overflow-x: hidden;
-    }
     .container{
         margin: 60px auto;
     }
 
     .container h1{
         padding-bottom: 30px;
+    }
+
+    .social-row{
+        margin-top: 0;
+    }
+
+    .contact-col a img{
+        width: 25px;
+        height: 25px;
     }
 }

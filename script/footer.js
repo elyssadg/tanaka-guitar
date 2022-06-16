@@ -14,7 +14,7 @@ function validateSubscribeForm(){
     if (username.value.length == 0){
         nameError.innerHTML = "Name can't be empty";
     } else if (username.value.length < 2){
-        nameError.innerHTML = "Name is shorter than 2 characters";
+        nameError.innerHTML = "Name must be more than 2 characters";
     } else {
         nameError.innerHTML = "";
         count += 1;

@@ -11,19 +11,25 @@ let errorMessage = document.getElementById("errorMessage");
 
 function validateForm(){
     var count = 0;
-    if(username.value.length<2){
-        errorUser.innerHTML = "Username is shorter than 2 characters"
+    if (username.value.length == 0){
+        errorUser.innerHTML = "Name can't be empty"
+    } else if(username.value.length<2){
+        errorUser.innerHTML = "Name must be more than to characters"
     }else{
         errorUser.innerHTML = ""
         count += 1;
     }
-    if(phone.value.startsWith("08")==false){
+    if (phone.value.length == 0){
+        errorPhone.innerHTML = "Phone can't be empty"
+    } else if(phone.value.startsWith("08")==false){
         errorPhone.innerHTML = "Phone number must start with '08'"
     }else{
         errorPhone.innerHTML =""
         count += 1;
     }
-    if(email.value.endsWith("@gmail.com")==false){
+    if (email.value.length == 0){
+        errorEmail.innerHTML = "Email can't be empty"
+    } else if(email.value.endsWith("@gmail.com")==false){
         errorEmail.innerHTML="Email must end with @gmail.com"
     }else{
         errorEmail.innerHTML=""
