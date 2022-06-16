@@ -255,18 +255,18 @@ a{
 }
 
 .manual-navigation{
-    margin-top: 5px;
-    width: 5%;
+    margin-top: 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .manual-btn{
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 10px;
+    border: 0.5px solid black;
+    padding: 7.5px;
+    border-radius: 50%;
     cursor: pointer;
-    transition: 1s;
+    transition: all 500ms ease-out;
 }
 
 .manual-btn:not(:last-child) {
