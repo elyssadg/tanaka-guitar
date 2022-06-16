@@ -31,42 +31,8 @@ a{
     width: 100%;
 }
 
-.slide{
-    display: none;
-    transition: 300ms ease-out 0s;
-}
-
-.slide img{
+.gallery-header img{
     width: 100%;
-}
-
-.prev-btn, .next-btn{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-}
-
-.prev-btn{
-    left: 35px;
-}
-
-.prev-btn img{
-    transform: rotate(180);
-}
-
-.next-btn{
-    right: 35px;
-}
-
-.prev-btn img, .next-btn img{
-    width: 40px; height: 40px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    transition: all 300ms ease-out 0s;
-}
-
-.prev-btn:hover img, .next-btn:hover img{
-    background: white;
 }
 
 /* -- Category Bar */
@@ -421,7 +387,7 @@ a{
     .col-guitar-gallery{
         transform: scale(0.9);
     }
-    
+
     .category-bar h1{
         padding-bottom: 20px;
     }

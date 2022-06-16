@@ -229,45 +229,12 @@ a{
     position: relative;
 }
 
-.slide{
+.slider{
     width: 100%;
-    display: none;
-    transition: 300ms ease-out 0s;
 }
 
-.slide img{
+.slider img{
     width: 100%;
-    border: 0.5px solid rgb(121, 46, 0);
-    border-radius: 20px;
-}
-
-.fade{
-    animation-name: fade;
-    animation-timing-function: ease-out;
-    animation-duration: 500ms;
-}
-
-@keyframes fade {
-    from{opacity: 0;}
-    from{opacity: 1;}
-}
-
-.indicator{
-    display: flex;
-    margin-top: 25px;
-    justify-content: center;
-}
-
-.indicator-circle{
-    width: 15px; height: 15px;
-    border-radius: 50%;
-    border: 0.5px solid rgba(0, 0, 0, 0.5);
-    background: rgba(217, 217, 217, 0.5);
-    margin: 0 20px;
-}
-
-.indicator .active{
-    background: rgb(121, 46, 0);
 }
 
 .prev-btn, .next-btn{
