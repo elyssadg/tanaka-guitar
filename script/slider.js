@@ -13,7 +13,7 @@ function radioClicked(current, newRadio){
     currentRadio = $(newRadio);
 }
 
-function clicked(){
+$(function(){
     radioClicked(currentRadio, '#manual-btn-1');
 
     $('#radio-1').click(function(){
@@ -73,3 +73,15 @@ function clicked(){
         }, 5000)
     });
 });
+
+var interval = setInterval(function(){
+    if (!flag){
+        counter+=1;
+        if(counter > 3){
+            counter = 1;
+        }
+        buttonClick(currBtn, '#manual-btn' + counter);
+        document.getElementById('radio' + counter).checked = true;
+        console.log(counter)
+    }
+}, 5000);
