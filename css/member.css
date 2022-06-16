@@ -150,7 +150,6 @@ a{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 90px;
     width: 172px;
     height: 37px;
     background-color: transparent;
@@ -161,38 +160,18 @@ a{
     border-radius: 30px;
     border: 2px solid #EA7B14;
     transition: all 300ms ease-out 0s;
+}
+
+.click button:hover{
+    cursor: pointer;
+    background-color: #EA7B14;
+    color: white;
 }
 
 .color-red{
     color: red;
     font-size: 12px;
     margin: 5px 0 0 20px;
-}
-
-.click button:hover{
-    cursor: pointer;
-    background-color: #EA7B14;
-    color: white;
-}
-
-.click button{
-    margin-top: 90px;
-    width: 172px;
-    height: 37px;
-    background-color: transparent;
-    color: #EA7B14;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    border-radius: 30px;
-    border: 2px solid #EA7B14;
-    transition: all 300ms ease-out 0s;
-}
-
-.click button:hover{
-    cursor: pointer;
-    background-color: #EA7B14;
-    color: white;
 }
 
 .benefit h1{
@@ -224,6 +203,11 @@ a{
         font-size: 28px;
     }
 
+    .join-form p:nth-child(2){
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
     .col-form-img{
         display: none;
     }
@@ -233,29 +217,41 @@ a{
     }
 
     .col-form{
-        width: 1000px;
-    }
-
-    .member-header{
-        position: relative;
         width: 100%;
-        background-position: center;
-        background-size: cover;
     }
-
-    .member-header h1{
-        font-size: 50px;
-        letter-spacing: 2px;
+    
+    .benefit-container{
+        justify-content: center;
+        gap: 40px;
     }
+    
+    .item{
+        width: 35%;
+    }
+}
 
-    .member-header p{
-        font-size: 35px;
+@media (max-width: 600px){
+    .item{
+        width: 50%;
     }
 }
 
 @media (max-width: 550px){
     .container h1{
         font-size: 24px;
+    }
+
+    .join-form p:nth-child(2){
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .input-container h5{
+        font-size: 15px;
+    }
+
+    .input-box{
+        padding: 9px 20px;
     }
 }
 
@@ -264,7 +260,7 @@ a{
         margin: 60px auto;
     }
 
-    .container h1{
-        padding-bottom: 30px;
+    .benefit h1{
+        margin-bottom: 30px;
     }
 }
