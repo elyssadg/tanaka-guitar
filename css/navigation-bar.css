@@ -4,25 +4,25 @@ body{
 
 .nav-container{
     position: fixed;
+    /* position: -web-kit-sticky; */
     top: 0;
     width: 100%;
-    max-width: 1440px;
     max-height: 83px;
     background-color: white;
     border-bottom: 0.5px solid rgba(0,0,0, 0.2);
-    z-index: 1;
+    z-index: 99;
 }
 
 #sidebar{
     position: absolute;
     width: 0;
-    height: 100%;
+    height: 100vh;
     top: 0;
     right: 0;
     background-color: #EA7B14;
     overflow-x: hidden;
     transition: all 300ms ease-out 0s;
-    z-index: 2;
+    z-index: 100;
 }
 
 #sidebar a{
