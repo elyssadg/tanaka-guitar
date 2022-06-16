@@ -262,7 +262,7 @@ a{
 }
 
 .manual-btn{
-    border: 0.5px solid black;
+    border: 0.5px solid rgb(121, 46, 0);
     padding: 7.5px;
     border-radius: 50%;
     cursor: pointer;
@@ -274,7 +274,7 @@ a{
 }
 
 .manual-btn:hover {
-    background: black;
+    background: rgb(121, 46, 0);
 }
 
 #radio-1:checked~.first {
