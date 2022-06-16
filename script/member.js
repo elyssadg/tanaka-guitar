@@ -5,8 +5,6 @@ let email = document.getElementById("email");
 let gender = document.getElementById("gender");
 
 function validateForm(){
-    alert("Hello! I am an alert box!!");
-    alert(first);
     if(first.value.length==0){
         errorFirst.innerHTML = "First name can't be empty"
     }else{
