@@ -23,7 +23,7 @@ a{
 .header-text{
     color: white;
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -78,7 +78,7 @@ a{
     color: white;
     padding-top: 15px;
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -184,20 +184,31 @@ a{
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .container h1{
         font-size: 28px;
     }
+    
+    .container h2{
+        font-size: 24px;
+    }
+    .mission{
+        height: 350px;
+    }
 
     .mission h1{
-        font-size: 50px;
+        font-size: 35px;
     }
     .header-text h1{
         font-family: 'Lalezar', cursive;
-        font-size: 80px;
+        font-size: 70px;
+        letter-spacing: 1px;
     }
     .header-text p{
-        font-size:40px;
+        font-size: 40px;
+    }
+    .our-story p, .why-tanaka p, .expect p{
+        font-size: 15px;
     }
     .about-us-header{
         position: relative;
@@ -215,12 +226,37 @@ a{
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     .container{
         margin: 60px auto;
     }
 
     .container h1{
         padding-bottom: 30px;
+    }
+
+    .story-row{
+        display: block;
+    }
+
+    .story-row img{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .mission{
+        height: 300px;
+    }
+    
+    .mission h1{
+        font-size: 30px;
+    }
+    .header-text h1{
+        font-family: 'Lalezar', cursive;
+        font-size: 70px;
+        letter-spacing: 1px;
+    }
+    .header-text p{
+        font-size:40px;
     }
 }
