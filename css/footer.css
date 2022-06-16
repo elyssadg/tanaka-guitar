@@ -7,6 +7,7 @@
 }
 
 .subscribe-form{
+    text-align: center;
     height: 382px;
     transform: translateY(30px);
     margin: 30px;
@@ -42,7 +43,7 @@
 
 #subscribe-btn{
     padding: 0;
-    width: 185px;
+    width: 13%;
     height: 50px;
     border: 2px solid rgb(234, 123, 20);
     border-radius: 30px;
@@ -68,12 +69,11 @@
 }
 
 .footer-container{
-    transform: translateY(30px);
-    padding: 50px 120px;
+    width: 84%;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
 }
 
 .first-col, .second-col{
@@ -142,10 +142,35 @@
 }
 
 .credit{
+    border-top: 0.5px solid rgba(0, 0, 0, 0.25);
     text-align: center;
-    transform: translateY(30px);
-    padding: 30px 0;
-    font-size: 18px;
+    padding: 40px 0;
+    font-size: 15px;
     font-weight: 300;
     color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1300px) {
+    .subscribe-form h2{
+        margin-bottom: 30px;
+    }
+    .subscribe-form input{
+        width: 60%;
+        height: 45px;
+    }
+
+    #subscribe-btn{
+        font-size: 18px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .subscribe{
+        height: 400px;
+    }
+
+    .subscribe-form{
+        height: 340px;
+    }
 }

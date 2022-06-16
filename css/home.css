@@ -13,6 +13,7 @@ a{
 
 /* -- Home Header -- */
 .home-header{
+    margin-top: 80px;
     position: relative;
     width: 100%;
     height: 626px;
@@ -28,7 +29,7 @@ a{
     height: 66%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -53%);
     text-align: center;
 }
 
@@ -90,7 +91,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    gap: 60px;
+    gap: 60px 40px;
 }
 
 /* -- Best Seller Catalogue -- */
@@ -305,7 +306,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
 }
 
@@ -382,8 +383,8 @@ a{
 .row-brands{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: space-around;
+    gap: 50px;
 }
 
 /* -- Brands Circle -- */
@@ -420,27 +421,61 @@ a{
     opacity: 1;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
+    .home-header{
+        height: 600px;
+    }
+
+    .header-text{
+        width: 80%;
+    }
+
+    .row-best-sellers, .row-categories{
+        justify-content: center;
+        gap: 60px;
+    }
+
     .row-categories{
-        justify-content: space-around;
+        gap: 15px 80px;
+    }
+
+    .row-brands{
+        gap: 40px;
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1150px) {
+    .row-brands{
+        justify-content: center;
+        gap: 40px 100px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header-text{
+        height: 72%;
+    }
+}
+
+@media (max-width: 1030px) {
     .row-best-sellers{
         gap: 40px;
-        justify-content: center;
+    }
+
+    .row-brands{
+        gap: 40px 80px;
     }
 }
 
+/* 
 @media (max-width: 1200px) {
     .home-header{
+        margin-top: 60px;
         height: 550px;
     }
 
     .header-text{
         width: 80%;
-        transform: translate(-50%, -55%);
     }
 
     .row-brands{
@@ -457,7 +492,6 @@ a{
         justify-content: center;
         gap: 40px 20px;
     }
-
 }
 
 @media (max-width: 850px) {
@@ -680,4 +714,4 @@ a{
         bottom: 15px;
         font-size: 10px;
     }
-}
+} */
