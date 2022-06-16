@@ -1,7 +1,7 @@
-let username = document.getElementById("name");
-let email = document.getElementById("email");
-let nameError = document.getElementById("name-error-message");
-let emailError = document.getElementById("email-error-message");
+let uname = document.getElementById("name");
+let gmail = document.getElementById("email");
+let unameError = document.getElementById("name-error-message");
+let gmailError = document.getElementById("email-error-message");
 
 rform.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -11,21 +11,21 @@ rform.addEventListener('submit', (event) => {
 function validateSubscribeForm(){
     var count = 0;
 
-    if (username.value.length == 0){
-        nameError.innerHTML = "Name can't be empty";
-    } else if (username.value.length < 2){
-        nameError.innerHTML = "Name must be more than 2 characters";
+    if (name.value.length == 0){
+        unameError.innerHTML = "Name can't be empty";
+    } else if (name.value.length < 2){
+        unameError.innerHTML = "Name must be more than 2 characters";
     } else {
-        nameError.innerHTML = "";
+        unameError.innerHTML = "";
         count += 1;
     }
 
-    if (email.value.length == 0){
-        emailError.innerHTML = "Email can't be empty";
-    } else if (email.value.endsWith("@gmail.com") == false){
-        emailError.innerHTML = "Email must end with @gmail.com";
+    if (gmail.value.length == 0){
+        gmailError.innerHTML = "Email can't be empty";
+    } else if (gmail.value.endsWith("@gmail.com") == false){
+        gmailError.innerHTML = "Email must end with @gmail.com";
     } else {
-        emailError.innerHTML = "";
+        gmailError.innerHTML = "";
         count += 1;
     }
 

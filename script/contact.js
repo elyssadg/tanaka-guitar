@@ -9,6 +9,11 @@ let errorEmail = document.getElementById("errorEmail");
 let errorSubject = document.getElementById("errorSubject");
 let errorMessage = document.getElementById("errorMessage");
 
+rform.addEventListener('submit', (event) => {
+    event.preventDefault();
+    validateForm();
+});
+
 function validateForm(){
     var count = 0;
     if (username.value.length == 0){
