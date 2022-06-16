@@ -10,29 +10,39 @@ let errorSubject = document.getElementById("errorSubject");
 let errorMessage = document.getElementById("errorMessage");
 
 function validateForm(){
+    var count = 0;
     if(username.value.length<2){
         errorUser.innerHTML = "Username is shorter than 2 characters"
     }else{
         errorUser.innerHTML = ""
+        count += 1;
     }
     if(phone.value.startsWith("08")==false){
         errorPhone.innerHTML = "Phone number must start with '08'"
     }else{
         errorPhone.innerHTML =""
+        count += 1;
     }
     if(email.value.endsWith("@gmail.com")==false){
         errorEmail.innerHTML="Email must end with @gmail.com"
     }else{
         errorEmail.innerHTML=""
+        count += 1;
     }
     if (subject.value.length == 0){
         errorSubject.innerHTML = "Subject can't be empty"
     } else {
         errorSubject.innerHTML = ""
+        count += 1;
     }
     if (message.value.length == 0){
         errorMessage.innerHTML = "Message can't be empty"
     } else {
         errorMessage.innerHTML = ""
+        count += 1;
+    }
+
+    if (count == 5){
+        location.href = "../html/contact-us.html";
     }
 }

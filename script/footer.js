@@ -3,7 +3,6 @@ let email = document.getElementById("email");
 let errorUser = document.getElementById("errorUser");
 let errorEmail = document.getElementById("errorEmail");
 
-<<<<<<< Updated upstream
 rform.addEventListener('submit', (event) => {
     event.preventDefault();
     validateSubscribeForm();
@@ -29,18 +28,4 @@ function validateSubscribeForm(){
     if (count == 2){
         location.href = "../html/home.html";
     }
-=======
-alert("masuk");
-function validateSubscribeForm(){
-    if(username.value.length<2){
-        errorUser.innerHTML = "Username is shorter than 2 characters"
-    }else{
-        errorUser.innerHTML = ""
-    }
-    if(email.value.endsWith("@gmail.com")==false){
-        errorEmail.innerHTML="Email must end with @gmail.com"
-    }else{
-        errorEmail.innerHTML=""
-    }
->>>>>>> Stashed changes
 }

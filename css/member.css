@@ -159,7 +159,7 @@ a{
 .color-red{
     color: red;
     font-size: 12px;
-    margin-left: 20px;
+    margin: 5px 0 0 20px;
 }
 
 .click button:hover{
