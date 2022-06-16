@@ -23,7 +23,7 @@ a{
 .header-text{
     color: white;
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 160px;
     top: 50%;
     left: 50%;
@@ -288,65 +288,6 @@ a{
     opacity: 1;
 }
 
-@media (max-width: 1000px) {
-    .contact-us-header{
-        height: 600px;
-    }
-    .contact-us-header{
-        margin-top: 70px;
-    }
-}
-
-@media(max-width: 800px){
-    .container h1{
-        font-size: 28px;
-    }
-
-    .contact-us-header{
-        margin-top: 65.5px;
-        height: 380px;
-    }
-    .header-text h1{
-        font-family: 'Lalezar', cursive;
-        font-size: 80px;
-        line-height: 100%;
-    }
-    .header-text p{
-        font-size:40px;
-    }
-    .store{
-        gap: 40px;
-    }
-    .row{
-        flex-direction: column;
-    }
-    .contact-col{
-        margin-top: 30px;
-    }
-    .contact-col h5, .contact-col p{
-       transform: translateX(60px);
-    }
-    .contact-col h5{
-        font-size: 20px;
-    }
-    .contact-col p{
-        font-size: 16px;
-    }
-    .contact-col img{
-        position: absolute;
-        transform: translateY(10px);
-        width: 35px;
-        height: 35px;
-    }
-    .social-row img{
-        position: relative;
-        transform: translateX(70px);
-    }
-    .contact-col input, .contact-col textarea{
-        width: 100%;
-    }
-}
-
 @media (max-width: 1420px) {
     .store{
         gap: 40px;
@@ -365,6 +306,80 @@ a{
     }
     .contact-col:nth-of-type(1) {
         flex-basis: 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-us-header{
+        height: 600px;
+    }
+    .contact-us-header{
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .store{
+        gap: 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .container h1{
+        font-size: 28px;
+    }
+
+    .contact-us-header{
+        margin-top: 70px;
+        height: 480px;
+    }
+
+    .header-text h1{
+        font-size: 80px;
+    }
+
+    .header-text p{
+        font-size:40px;
+    }
+
+    .store{
+        gap: 40px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .contact-col{
+        margin-top: 30px;
+    }
+
+    .contact-col h5, .contact-col p{
+       transform: translateX(60px);
+    }
+
+    .contact-col h5{
+        font-size: 20px;
+    }
+
+    .contact-col p{
+        font-size: 16px;
+    }
+
+    .contact-col img{
+        position: absolute;
+        transform: translateY(10px);
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-row img{
+        position: relative;
+        transform: translateX(70px);
+    }
+
+    .contact-col input, .contact-col textarea{
+        width: 100%;
     }
 }
 
