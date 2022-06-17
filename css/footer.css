@@ -120,6 +120,7 @@
 }
 
 .third-col p{
+    color: black;
     font-size: 18px;
     font-weight: 300;
 }
@@ -156,7 +157,7 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .subscribe-form form input{
         width: 65%;
         height: 45px;
@@ -367,6 +368,10 @@
 
     .credit{
         font-size: 12px;
+    }
+
+    .social-img{
+        transform: translateX(20px);
     }
 }
 

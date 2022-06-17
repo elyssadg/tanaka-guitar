@@ -84,6 +84,7 @@ a{
     padding: 0;
     color: rgb(149, 149, 149);
     font-size: 18px;
+    text-align: right;
 }
 
 .view-all:hover{

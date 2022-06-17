@@ -295,11 +295,40 @@ a{
         margin: 60px auto;
     }
 
-    .container h1{
-        padding-bottom: 30px;
+    .benefit h1, .join-form p:nth-child(2){
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .color-red{
+        font-size: 10px;
     }
 
-    .benefit h1{
-        margin-bottom: 0px;
+    .input-container h5{
+        font-size: 15px;
+    }
+
+    .input-box{
+        padding: 8px 20px;
+    }
+
+    .input-box input{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .click button{
+        margin-top: 120px;
+        bottom: -40px;
+    }
+
+    .benefit-container{
+        gap: 10px;
+    }
+
+    .item{
+        width: 80%;
     }
 }

@@ -382,6 +382,14 @@ a{
     .contact-col input, .contact-col textarea{
         width: 100%;
     }
+
+    .contact-col form{
+        text-align: center;
+    }
+
+    .color-red{
+        text-align: left;
+    }
 }
 
 @media (max-width: 550px){
@@ -436,8 +444,46 @@ a{
         margin-top: 0;
     }
 
+    .store-box{
+        transform: scale(0.8);
+    }
+
+    .social-row{
+        transform: translateX(-20px);
+    }
     .contact-col a img{
         width: 25px;
         height: 25px;
+    }
+
+    .contact-col h5{
+        font-size: 17px;
+    }
+
+    .contact-col p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+    .store-box{
+        transform: scale(0.7);
+    }
+
+    .contact-col h5{
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .contact-col p{
+        font-size: 11px;
+    }
+
+    .contact-col form input{
+        height: 40px;
+    }
+
+    .click button{
+        transform: scale(0.8);
     }
 }
