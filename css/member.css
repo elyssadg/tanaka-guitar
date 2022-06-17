@@ -305,6 +305,10 @@ a{
         font-size: 10px;
     }
 
+    .join-content{
+        height: 700px;
+    }
+
     .input-container h5{
         font-size: 15px;
     }
