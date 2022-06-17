@@ -618,7 +618,7 @@ a{
 
 @media (max-width: 550px) {
     .header-text{
-        transform: translate(-50%, -60%);
+        transform: translate(-50%, -55%);
     }
     
     .row-brands{
