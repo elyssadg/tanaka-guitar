@@ -291,6 +291,11 @@ a{
     .input-box input::placeholder{
         font-size: 8px;
     }
+
+    .input-box input{
+        font-size: 12px;
+    }
+
     .container{
         margin: 60px auto;
     }
@@ -306,7 +311,7 @@ a{
     }
 
     .join-content{
-        height: 700px;
+        height: 760px;
     }
 
     .input-container h5{
@@ -314,7 +319,7 @@ a{
     }
 
     .input-box{
-        padding: 8px 20px;
+        padding: 8px 18px;
     }
 
     .input-box input{
@@ -334,5 +339,5 @@ a{
 
     .item{
         width: 80%;
-    }
+    } 
 }
