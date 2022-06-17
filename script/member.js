@@ -6,7 +6,7 @@ rform.addEventListener('submit',(event)=>{
 function validateMemberForm(){
     let first = document.getElementById("first");
     let last = document.getElementById("last");
-    let phone = document.getElementById("phone");
+    let age = document.getElementById("age");
     let email = document.getElementById("email-member");
     let address = document.getElementById("address");
     let gender = document.getElementById("gender");
@@ -41,12 +41,12 @@ function validateMemberForm(){
         errorAddress.innerHTML = ""
         count += 1;
     }
-    if (phone.value.length == 0){
-        errorPhone.innerHTML = "Phone number can't be empty";
-    } else if (phone.value.startsWith("08") == false || phone.value.length <= 2){
-        errorPhone.innerHTML = "Phone number must start with 08 and must be more than 2 characters";
+    if (age.value.length == 0){
+        errorAge.innerHTML = "Age can't be empty";
+    } else if (age.value < 15){
+        errorAge.innerHTML = "You must be 15 years old or older";
     } else {
-        errorPhone.innerHTML = "";
+        errorAge.innerHTML = "";
         count += 1;
     }
     if (gender.value.length == 0){
