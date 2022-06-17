@@ -27,8 +27,8 @@ function validateForm(){
         errorPhone.innerHTML = "Phone can't be empty"
     } else if(phone.value.startsWith("08")==false || phone.value.length <= 2){
         errorPhone.innerHTML = "Phone number must start with '08' and must be more than 2 characters"
-    } else {
-        errorPhone.innerHTML = ""
+    }else{
+        errorPhone.innerHTML =""
         count += 1;
     }
     if (email.value.length == 0){
