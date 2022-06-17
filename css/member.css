@@ -78,7 +78,7 @@ a{
 .join-content{
     display: flex;
     justify-content: space-between;
-    height: 660px;
+    height: 810px;
 }
 
 .col-form-img{
@@ -233,7 +233,7 @@ a{
     }
 
     .col-form{
-        width: 1000px;
+        width: 100%;
     }
 
     .member-header{

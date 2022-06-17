@@ -8,6 +8,7 @@ function validateMemberForm(){
     let last = document.getElementById("last");
     let phone = document.getElementById("phone");
     let email = document.getElementById("email-member");
+    let address = document.getElementById("address");
     let gender = document.getElementById("gender");
     let agree = document.getElementById("terms-condition");
     var count = 0;
@@ -34,6 +35,12 @@ function validateMemberForm(){
         errorEmail.innerHTML = "";
         count += 1;
     }
+    if (address.value.length == 0){
+        errorAddress.innerHTML = "Address can't be empty"
+    } else {
+        errorAddress.innerHTML = ""
+        count += 1;
+    }
     if (phone.value.length == 0){
         errorPhone.innerHTML = "Phone number can't be empty";
     } else if (phone.value.startsWith("08") == false || phone.value.length <= 2){
@@ -57,7 +64,7 @@ function validateMemberForm(){
         count += 1;
     }
 
-    if(count == 6){
+    if(count == 7){
         location.href = "../html/member.html";
     }
 }
