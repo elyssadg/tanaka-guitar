@@ -353,8 +353,8 @@
     }
 }
 
-@media (max-width: 400px) {
-    .subscribe-form h2{
+@media (max-width: 420px) {
+    .subscribe-form form h2{
         font-size: 15px;
     }
 
