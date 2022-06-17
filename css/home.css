@@ -273,8 +273,12 @@ a{
     margin-right: 5%;
 }
 
-.manual-btn:hover, #manual-btn-1 {
+#manual-btn-1{
     background: rgb(121, 46, 0);
+}
+
+.manual-btn:hover{
+    background: rgb(121, 46, 0) !important;
 }
 
 #radio-1:checked~.first {
