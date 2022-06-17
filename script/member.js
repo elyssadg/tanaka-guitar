@@ -1,16 +1,15 @@
-let first = document.getElementById("first");
-let last = document.getElementById("last");
-let phone = document.getElementById("phone");
-let email = document.getElementById("email");
-let gender = document.getElementById("gender");
-let agree = document.getElementById("terms-condition");
-
 rform.addEventListener('submit',(event)=>{
     event.preventDefault();
     validateMemberForm();
 });
 
 function validateMemberForm(){
+    let first = document.getElementById("first");
+    let last = document.getElementById("last");
+    let phone = document.getElementById("phone");
+    let email = document.getElementById("email-member");
+    let gender = document.getElementById("gender");
+    let agree = document.getElementById("terms-condition");
     var count = 0;
 
     if (first.value.length == 0){
@@ -25,14 +24,20 @@ function validateMemberForm(){
         errorLast.innerHTML = "";
         count += 1;
     }
-    if (email.value.endsWith("@gmail.com") == false){
+    if (email.value.length == 0){
+        errorEmail.innerHTML = "Email can't be empty";
+    } else if (email.value.endsWith("@gmail.com") == false){
         errorEmail.innerHTML = "Email must end with @gmail.com";
+    } else if (email.value.length <= 10){
+        errorEmail.innerHTML = "Email must have an address";
     } else {
         errorEmail.innerHTML = "";
         count += 1;
     }
-    if (phone.value.startsWith("08") == false || phone.value.length <= 2){
-        errorPhone.innerHTML = "Phone must start with 08 and must be more than 2 characters";
+    if (phone.value.length == 0){
+        errorPhone.innerHTML = "Phone number can't be empty";
+    } else if (phone.value.startsWith("08") == false || phone.value.length <= 2){
+        errorPhone.innerHTML = "Phone number must start with 08 and must be more than 2 characters";
     } else {
         errorPhone.innerHTML = "";
         count += 1;

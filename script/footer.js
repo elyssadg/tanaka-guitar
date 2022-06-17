@@ -1,14 +1,13 @@
-let username = document.getElementById("name");
-let email = document.getElementById("email");
-let nameError = document.getElementById("name-error-message");
-let emailError = document.getElementById("email-error-message");
-
 rform.addEventListener('submit', (event) => {
     event.preventDefault();
     validateSubscribeForm();
 });
 
 function validateSubscribeForm(){
+    let username = document.getElementById("name");
+    let email = document.getElementById("email");
+    let nameError = document.getElementById("name-error-message");
+    let emailError = document.getElementById("email-error-message");
     var count = 0;
 
     if (username.value.length == 0){
@@ -24,6 +23,8 @@ function validateSubscribeForm(){
         emailError.innerHTML = "Email can't be empty";
     } else if (email.value.endsWith("@gmail.com") == false){
         emailError.innerHTML = "Email must end with @gmail.com";
+    } else if (email.value.length <= 10){
+        emailError.innerHTML = "Email must have an address";
     } else {
         emailError.innerHTML = "";
         count += 1;

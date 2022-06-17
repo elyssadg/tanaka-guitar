@@ -154,7 +154,7 @@
                     <div id="errorUser" class="color-red"></div>
                     <input type="text" id="phone" placeholder="Enter your phone number (format: 08xxxxxxxxxx)">
                     <div id="errorPhone" class="color-red"></div>
-                    <input type="email" id="email" placeholder="Enter your email address (format: address@gmail.com)">
+                    <input type="email" id="email-contact" placeholder="Enter your email address (format: address@gmail.com)">
                     <div id="errorEmail" class="color-red"></div>
                     <input type="text" id="subject" placeholder="Enter your subject">
                     <div id="errorSubject" class="color-red"></div>
@@ -171,7 +171,7 @@
     <footer>
         <div class="subscribe">
             <div class="subscribe-form">
-                <form method="POST">
+                <form method="POST" onsubmit="validateSubscribeForm()">
                     <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
                     <input type="text" id="name" placeholder="Enter your name (min. 2 characters)">
                     <div id="name-error-message"></div>
